@@ -1,0 +1,127 @@
+.content {
+    display: flex;
+}
+
+.content_left {
+    width: 365px;
+}
+
+.content_right {
+    // flex-grow: 1;
+    width: calc(100% - 365px);
+}
+
+.title {
+    font: 500 40px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: $kColorBlack;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    span {
+        max-width: 240px;
+    
+        span {
+            color: $kColorPink;
+        }
+    }
+
+    svg {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        stroke: $kColorBlack;
+    }
+}
+
+.text {
+    margin-top: 140px;
+    max-width: 270px;
+
+    font: 400 16px/1.2 $kFontPublicSans;
+    letter-spacing: -.02em;
+    color: rgba($kColorBlack, .6);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .content_left {
+        width: 300px;
+    }
+
+    .content_right {
+        width: calc(100% - 300px);
+    }
+
+    .list {
+        [data-class="button"] {
+            font-size: 24px;
+        }
+    }
+
+    .text {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .content_left,
+    .content_right {
+        width: 100%;
+    }
+
+    .title {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+
+    .text {
+        margin-top: 36px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .list {
+        [data-class="button"] {
+            padding: 24px 20px;
+            border-radius: 20px;
+        }
+        [data-class="content-text"] {
+            padding: 0 20px 30px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        font-size: 28px;
+
+        span {
+            max-width: 160px;
+        }
+    }
+    .list {
+        [data-class="button"] {
+            font-size: 20px;
+        }
+    }
+}

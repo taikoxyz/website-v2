@@ -1,0 +1,177 @@
+.platform {}
+
+.suptitle {
+    font: 600 14px/1.2 $kFontPublicSans;
+    letter-spacing: 0.04em;
+    color:#000000;
+    text-transform: uppercase;
+}
+
+.row {
+    padding: 0 36px;
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.title {
+    font: 500 75px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    max-width: 7.7em;
+}
+
+.button {
+
+}
+
+.list {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.list_item {
+    border-radius: 30px;
+    background: #FFF;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-right: 90px;
+}
+
+.list_content {
+    max-width: 402px;
+    width: 100%;
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list_icon {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: contain;
+    object-position: center;
+}
+
+.list_title {
+    margin-top: 56px;
+
+    font: 500 40px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: #22282B;
+}
+
+.list_text {
+    margin-top: 28px;
+
+    font: 500 16px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .5);
+}
+
+.list_button {
+    margin-top: 84px;
+}
+
+.list_image {
+    max-width: 692px;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .title {
+        font-size: 60px;
+    }
+
+    .list_item {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .list_content {
+        max-width: 370px;
+    }
+
+    .list_title {
+        margin-top: 44px;
+    }
+
+    .list_button {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .row {
+        padding: 0;
+    }
+    
+    .title {
+        font-size: 52px;
+    }
+
+    .list_title {
+        margin-top: 24px;
+    }
+
+    .list_text {
+        margin-top: 16px;
+    }
+
+    .list_button {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .list_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .list_item {
+        border-radius: 25px;
+    }
+
+    .list_title {
+        font-size: 28px;
+    }
+
+    .list_content {
+        padding: 22px 20px 0;
+    }
+}
+
+@media screen and (max-width: $kMobileM) {
+    .list_item {
+        overflow: hidden;
+    }
+
+    .list_image {
+        display: flex;
+        justify-content: center;
+
+        img {
+            min-width: 400px;
+        }
+    }
+}

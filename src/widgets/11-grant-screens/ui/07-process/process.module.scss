@@ -1,0 +1,9 @@
+.process {
+    padding: 0 40px;
+}
+
+@media screen and (max-width: $kTabletM) {
+    .process {
+        padding: 0;
+    }
+}

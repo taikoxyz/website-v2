@@ -1,0 +1,12 @@
+.controls {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.cancel {
+    font: 600 16px/1.255 $kFontPublicSans;
+    letter-spacing: -0.02em;
+    color: rgba(#000, 0.4);
+}

@@ -1,0 +1,56 @@
+.root {
+    [data-link] {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    [data-logo] {
+        opacity: 0;
+        transition: opacity .7s ease;
+
+        @for $i from 2 through 3 {
+            &:nth-child(#{$i}) {
+                transition-delay: #{($i * 0.1 + 0.1)}s;
+            }
+        }
+    }
+
+    [data-social] {
+        opacity: 0;
+        transform: rotate(-90deg);
+
+        @for $i from 2 through 3 {
+            &:nth-child(#{$i}) {
+                transition-delay: #{($i * 0.1 - 0.1)}s;
+            }
+        }
+    }
+
+    [data-link],
+    [data-social] {
+        transition: .7s ease;
+        transition-property: opacity, transform;
+    }
+
+    &Animated {
+        [data-link] {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        [data-social] {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+
+        [data-logo] {
+            opacity: 1;
+        }
+    }
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}

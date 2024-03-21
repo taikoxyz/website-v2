@@ -1,0 +1,138 @@
+.wrapper {
+    display: flex;
+}
+
+.left {
+    width: 350px;
+    padding-right: 25px;
+    flex-shrink: 0;
+}
+
+.right {
+    width: calc(100% - 350px);
+
+    padding: 40px 36px;
+    padding-right: 85px;
+    border-radius: 30px;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.suptitle {
+    padding-top: 52px;
+    text-transform: uppercase;
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .6);
+}
+
+.title {
+    max-width: 480px;
+
+    font: 500 36px/1 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: $kColorBlack;
+
+    span {
+        color: $kColorPink;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.text {
+    max-width: 420px;
+
+    font: 400 16px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .8);
+
+    p + p {
+        margin-top: 1.255em;
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .left {
+        width: 225px;
+    }
+
+    .right {
+        width: calc(100% - 225px);
+        padding-right: 36px
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .wrapper {
+        flex-direction: column;
+        padding: 32px;
+        border-radius: 30px;
+        background: #FFF;
+        gap: 35px;
+    }
+
+    .left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .suptitle {
+        padding-top: 0;
+    }
+
+    .title {
+        font-size: 32px;
+        max-width: 360px;
+    }
+
+    .right {
+        padding: 0;
+        width: 100%;
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: $kTabletSM) {
+    .right {
+        flex-direction: column;
+        gap: 30px;
+    
+        align-items: flex-start;
+    }
+
+    .title,
+    .text {
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .wrapper {
+        padding: 24px 20px 30px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .wrapper {
+        gap: 20px;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+
+    .right {
+        gap: 18px;
+    }
+}

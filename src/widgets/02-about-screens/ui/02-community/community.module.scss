@@ -1,0 +1,202 @@
+.community {
+    &InView {
+        .image_content {
+            opacity: 1;
+        }
+    }
+}
+
+.wrapper {
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+
+.content {
+    padding: 45px;
+    padding-bottom: 135px;
+}
+
+.content_inner {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.suptitle {
+    padding: 11.3px 35px;
+    border: 1px solid #dadbdd;
+    border-radius: 100px;
+
+    font: 500 13.5px/1 $kFontHelveticaNeue;
+    color: $kColorBlack;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-top: 85px;
+    font: 500 55px/0.9 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
+.text {
+    margin-top: 31px;
+    font: 400 16px/1.255 $kFontPublicSans;
+    color: rgba($kColorBlack, 0.8);
+}
+
+.image {
+    height: 505px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    img {
+        height: 570px;
+        object-fit: contain;
+        object-position: center;
+        flex-shrink: 0;
+    }
+}
+
+.image_content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45%, -50%);
+
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.image_counter {
+    width: 1.85em;
+    font: 500 65px/1.2 $kFontClashGrotesk;
+    letter-spacing: -.01em;
+    color: $kColorBlack;
+}
+
+.image_dapps {
+    font: 600 16px/1.2 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .4);
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .wrapper {
+        padding-right: 0;
+    }
+
+    .image {
+    }
+
+    .title {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .content {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .content_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        margin-top: 35px;
+    }
+
+    .text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image {
+        height: 400px;
+
+        img {
+            height: unset;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .wrapper {
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .content {
+        padding: 20px 20px 50px;
+    }
+
+    .content_inner {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .title {
+        font-size: 40px;
+        max-width: 400px;
+    }
+
+    .image {
+        align-self: center;
+        min-width: 372px;
+        flex-shrink: 0;
+
+        img {
+            min-width: 372px;
+        }
+    }
+
+    .image_counter {
+        font-size: 42px;
+    }
+
+    .image_dapps {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        font-size: 32px;
+        max-width: 290px;
+    }
+
+    .image {
+        height: auto;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}

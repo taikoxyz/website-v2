@@ -1,0 +1,148 @@
+.apply {
+    padding: 20px;
+    margin: auto;
+    max-width: 515px;
+    width: 100%;
+}
+
+.apply_wrapper {
+    background: #fff;
+    border-radius: 23px;
+
+    padding: 34px 50px 46px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.image {
+    margin: 0 auto;
+    max-width: 200px;
+    width: 100%;
+}
+
+.closeButton {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f8f8f8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: filter 0.2s ease;
+
+    svg {
+        width: 10px;
+        height: 10px;
+        flex-shrink: 0;
+        stroke: $kColorBlack;
+    }
+
+    &:hover {
+        filter: brightness(0.95);
+    }
+}
+
+.title {
+    margin-top: 24px;
+
+    text-align: center;
+    font: 500 28px/0.9 $kFontClashGrotesk;
+    color: #22282b;
+}
+
+.text {
+    margin: 14px auto 0;
+    max-width: 272px;
+    width: 100%;
+    text-align: center;
+    font: 400 16px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.8);
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+.form {
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.input {
+    &_field {
+        border: none;
+        border-radius: 14px;
+        background: #f8f8f8;
+
+        &[data-not-empty='true'] {
+            .input_input {
+                padding-top: 7px;
+            }
+
+            .input_placeholder {
+                font-size: 10px !important;
+            }
+        }
+    }
+
+    &_input {
+        min-height: 66px;
+    }
+
+    &_placeholder {
+        font: 400 16px/1.15 $kFontPublicSans;
+        letter-spacing: -0.01em;
+    }
+}
+
+.textarea {
+    .input_field {
+        &[data-not-empty='true'] {
+            .input_input {
+                padding-top: 28px;
+            }
+        }
+    }
+
+    .input_input {
+        padding: 23px 18px 20px;
+        height: 66px;
+        max-height: 137px;
+    }
+}
+
+.applyBtn {
+    margin-top: 16px;
+}
+
+.file {
+    width: 100%;
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .apply_wrapper {
+        padding: 38px 20px 40px;
+    }
+
+    .image {
+        max-width: 140px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}

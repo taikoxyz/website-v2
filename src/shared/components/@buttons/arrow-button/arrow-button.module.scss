@@ -1,0 +1,40 @@
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    background: $kColorPink;
+    border: 1px solid $kColorPink;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: filter .1s ease;
+
+    font-size: 0;
+
+    svg {
+        width: 23px;
+        height: 23px;
+        fill: #FFF;
+    }
+
+    &_prev {
+        svg {
+            transform: scaleX(-1);
+        }
+    }
+
+    &:disabled {
+        background-color: transparent;
+        svg {
+            fill: $kColorPink;
+        }
+    }
+
+    &:hover:not(:disabled) {
+        filter: brightness(.95);
+    }
+}

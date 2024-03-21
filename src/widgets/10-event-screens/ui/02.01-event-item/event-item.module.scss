@@ -1,0 +1,133 @@
+.event {
+    padding: 12px;
+    border-radius: 20px;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 120px;
+    height: 80px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.title {
+    padding: 0 24px;
+    flex-grow: 1;
+
+    font: 500 28px/1 $kFontClashGrotesk;
+    color: $kColorBlack;
+
+    @include textOverflowVertical(1);
+}
+
+.column_420 {
+    width: 420px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center ;
+}
+
+.column_text {
+    font: 400 16px/1.72 $kFontPublicSans;
+    letter-spacing: -.02em;
+    color: rgba($kColorBlack, .6);
+
+    width: 50%;
+}
+
+.controls {
+    width: 90px;
+    flex-shrink: 0;
+}
+
+.moreBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font: 600 14px/1.1 $kFontPublicSans;
+    color: $kColorBlack;
+
+    svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        stroke: $kColorBlack;
+    }
+}
+
+@media screen and (max-width: $kLaptopXXL) {
+    .title {
+        font-size: 26px;
+    }
+
+    .column_420 {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .image {
+        width: 110px;
+        height: 72px;
+        border-radius: 15px;
+    }
+
+    .title {
+        font-size: 23px;
+        padding: 0 14px;
+    }
+
+    .column_420 {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .event {
+        flex-wrap: wrap;
+        gap: 16px 12px;
+        padding: 24px 20px;
+    }
+
+    .title {
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .column_420 {
+        width: 100%;
+    }
+
+    .column_text {
+        width: auto;
+
+        display: flex;
+        align-items: center;
+
+        + .column_text {
+            &::before {
+                content: "";
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: rgba(#3C4049, .2);
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        width: 100%;
+        padding: 0;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,76 @@
+.wrapper {
+    display: flex;
+}
+
+.left {
+    width: 26%;
+    padding-top: 52px;
+    padding-left: 24px;
+}
+
+.right {
+    width: 74%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title {
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.6);
+    text-transform: uppercase;
+}
+
+.main {
+    padding: 40px 36px;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.apply {
+    padding: 40px 36px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #ea36a4 -9.56%, #f997d0 100%);
+}
+
+.apply_title {
+    font: 500 28px/1 $kFontClashGrotesk;
+    letter-spacing: -.01em;
+    color: #FFF;
+}
+
+.apply_text {
+    margin-top: 28px;
+
+    color: #FFF;
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .main,
+    .apply {
+        padding: 26px 20px;
+        border-radius: 25px;
+    }
+
+    .apply_title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .apply_title {
+        font-size: 20px;
+    }
+
+    .apply_text {
+        margin-top: 18px;
+    }
+}

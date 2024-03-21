@@ -1,0 +1,49 @@
+.hero {
+    padding: 70px 0 20px;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+
+    font: 500 60px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: #000;
+
+    span {
+        display: block;
+        color: $kColorPink;
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .hero {    
+        padding-top: 35px;
+    }
+
+    .title {
+        font-size: 48px;
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .title {
+        span {
+            display: inline;
+        }
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .title {
+        font-size: 32px;
+    }
+}

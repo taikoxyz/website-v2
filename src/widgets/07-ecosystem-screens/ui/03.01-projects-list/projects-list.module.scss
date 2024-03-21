@@ -1,0 +1,32 @@
+.list {
+    @include grid(4, 24);
+}
+
+.list_item {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .list {
+        @include grid(3, 24);
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .list {
+        @include grid(2, 24);
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .list {
+        @include grid(2, 12);
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .list {
+        @include grid(1, 18);
+    }
+}

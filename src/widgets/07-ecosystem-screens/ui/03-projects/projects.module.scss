@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: column
+}
+
+.lastUpdate {
+    margin: 28px auto 0;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font: 500 14px/1.1 $kFontPublicSans;
+    color: #444A55;
+
+    background: #EFEFEF;
+
+    padding: 10px;
+    border-radius: 100px;
+
+    svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        stroke: #292D32;
+    }
+}
+
+.viewMore {
+    margin: 38px auto 0;
+    white-space: nowrap;
+
+    [data-icon] {
+        transform: rotate(90deg);
+    }
+}

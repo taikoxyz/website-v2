@@ -1,0 +1,18 @@
+{
+    "title": "Explore the <span>Taiko</span> Ecosystem",
+    "suptitle": "About ecosystem",
+    "text": "Join a supportive, collaborative ecosystem with a greater purpose – permissionless, flexible, and dedicated to defining the future of Ethereum.",
+    "joinOurEcosystem": "Join our ecosystem",
+    "dapps": "dApps",
+    "searchProjects": "Search for projects...",
+    "allTypes": "all types",
+    "allCategories": "all categories",
+    "lastUpdated": "Last updated on",
+    "viewMore": "View more",
+    "grant": {
+        "suptitle": "our grant program",
+        "text": "Our goal is to discover and support innovative projects and community members that advance the <span>Taiko ecosystem</span>",
+        "applyText": "Apply to our grants program",
+        "contactUs": "Contact us"
+    }
+}

@@ -1,0 +1,133 @@
+.root {
+    overflow: hidden;
+
+    &:global(.aos) {
+        .controls_btn {
+            transform: scale(0);
+            opacity: 0;
+            transition: .8s ease;
+            transition-property: opacity, transform;
+
+            &:nth-child(2) {
+                transition-delay: .15s;
+            }
+        }
+
+        [data-class="blog"] {
+            transform: translateY(25px);
+            opacity: 0;
+            transition: 1.2s ease;
+            transition-property: opacity, transform;
+        }
+
+        [data-class="blog-title"] {
+            transform: translateY(30px);
+            opacity: 0;
+            transition: 1.7s ease;
+            transition-property: opacity, transform;
+        }
+
+        @for $i from 1 through 10 {
+            .swiper_slide:nth-child(#{$i}) {
+                [data-class="blog"],
+                [data-class="blog-title"] {
+                    transition-delay: #{$i * 0.1 - 0.1}s;
+                }
+            }
+        }
+
+        &:global(.--animate) {
+            [data-class="blog"],
+            [data-class="blog-title"] {
+                transform: translateY(0);
+                opacity: 1;
+            }
+    
+            .controls_btn {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.title {
+    font: 500 55px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: #22282B;
+}
+
+.controls {
+    display: flex;
+    gap: 16px;
+}
+
+.slider {
+    margin: 0 -12px;
+}
+
+.swiper {
+    overflow: visible;
+}
+
+.swiper_slide {
+    width: 374px;
+    padding: 0 12px;
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .header {
+        padding: 0;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .controls {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .wrapper {
+        gap: 40px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .controls {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .blog {
+        font-size: 13px !important;
+    }
+
+    .swiper_slide {
+        width: 312px;
+    }
+}

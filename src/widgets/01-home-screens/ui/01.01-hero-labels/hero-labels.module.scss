@@ -1,0 +1,43 @@
+.root {
+    overflow: hidden;
+}
+
+.label {
+    white-space: nowrap;
+    overflow: hidden;
+
+    [data-label] {
+        border: none;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 2.5px;
+            height: 100%;
+            background: $kColorPink;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.enter {
+    width: 0;
+}
+
+.enterActive {
+    width: 100%;
+    transition: width 0.5s ease .15s;
+}
+
+.exit {
+    width: 100%;
+}
+
+.exitActive {
+    width: 0;
+    transition: width 0.5s ease .15s;
+}

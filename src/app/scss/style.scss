@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}
+
+body {
+    background: $kColorThemeWhite;
+    overscroll-behavior: none;
+}
+
+@media screen and (min-width: 992px) {
+}
+
+.container {
+    max-width: $kContainer + ($kPadding * 2);
+}
+
+.container {
+    width: 100%;
+    padding: 0 $kPadding;
+    margin-inline: auto;
+}
+
+.img-cover {
+    @include imgCover;
+}
+
+@media (max-width: 1180px) {
+    .container {
+        padding: 0 $kPaddingTablet;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 0 $kPaddingMobile;
+    }
+}

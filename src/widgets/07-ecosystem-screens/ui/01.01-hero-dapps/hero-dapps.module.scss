@@ -1,0 +1,35 @@
+.dapps {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logos {
+    display: flex;
+}
+
+.logos_item {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+
+    + .logos_item {
+        margin-left: -12px;
+    }
+}
+
+.content {
+}
+
+.title {
+    font: 500 26px/1.255 $kFontClashGrotesk;
+    letter-spacing: -0.01em;
+    color: $kColorBlack;
+}
+
+.text {
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.4);
+    text-transform: uppercase;
+}

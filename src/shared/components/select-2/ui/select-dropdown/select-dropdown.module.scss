@@ -1,0 +1,24 @@
+.dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 10px);
+    z-index: 500;
+}
+
+.dropdown_default {
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.dropdownContainer {}
+
+.dropdownContainer_default {}
+
+.option {}
+
+.option_default {}
+
+.optionActive_default {
+    opacity: .5;
+}

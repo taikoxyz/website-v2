@@ -1,0 +1,296 @@
+.hero {
+    padding: 170px 0 60px;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    :global(.container) {
+        position: relative;
+        z-index: 2;
+    }
+
+    &Complete {
+        .title,
+        .taikoIs {
+            opacity: 1;
+        }
+
+        .text {
+            svg {
+                transform: rotate(0);
+            }
+
+            span {
+                opacity: 1;
+            }
+        }
+
+        .scrollToExplore {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.box {
+    position: relative;
+    z-index: 2;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    :global(.container) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+.image {
+    max-width: 315px;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.left {
+    max-width: 590px;
+}
+
+.title {
+    font: 500 160px/0.75 $kFontClashGrotesk;
+    color: $kColorBlack;
+    letter-spacing: -0.02em;
+
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.text {
+    margin-top: 46px;
+    max-width: 340px;
+
+    display: flex;
+    align-items: center;
+    gap: 26px;
+
+    svg {
+        width: 32px;
+        height: 32px;
+
+        transform: rotate(110deg);
+        transition: transform 0.6s ease;
+    }
+
+    span {
+        font: 500 18px/1.255 $kFontPublicSans;
+        letter-spacing: -0.01em;
+        color: $kColorBlack;
+
+        opacity: 0;
+        transition: opacity 0.6s ease;
+    }
+}
+
+.right {
+    margin-top: auto;
+    // padding-top: 320px;
+    max-width: 340px;
+    width: 100%;
+}
+
+.right_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.taikoIs {
+    font: 500 36px/0.75 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: $kColorBlack;
+    text-transform: lowercase;
+
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.label {
+    margin-top: 25px;
+    text-transform: lowercase;
+}
+
+.controls {
+    margin-top: 56px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.scrollToExplore {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    transform: translateY(-45px);
+    opacity: 0;
+
+    transition: 0.7s cubic-bezier(0.16, 1.62, 0.66, 1.04);
+    transition-property: opacity, transform;
+
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.6);
+    text-transform: uppercase;
+
+    svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        stroke: #292d32;
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: $kLaptopXXL) {
+    .hero {
+        padding: 170px 0 60px;
+    }
+
+    .image {
+        max-width: 290px;
+        transform: translate(-50%, -60%);
+    }
+
+    .title {
+        font-size: 130px;
+    }
+
+    .text {
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .right {
+        padding-top: 240px;
+    }
+
+    .taikoIs {
+        font-size: 26px;
+    }
+
+    .controls {
+        margin-top: 32px;
+    }
+
+    .footer {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .image {
+        top: 0;
+        transform: translate(-50%, 0);
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .right {
+        padding-top: 100px;
+        margin-left: auto;
+    }
+    .title {
+        font-size: 110px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .hero {
+        padding-top: 90px;
+    }
+
+    .image {
+        top: 100px;
+        max-width: 240px;
+    }
+
+    .wrapper {
+        align-items: center;
+    }
+
+    .left {
+        max-width: 400px;
+        width: auto;
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 80px;
+    }
+
+    .text {
+        margin-top: 32px;
+        max-width: 250px;
+    }
+
+    .right {
+        padding-top: 275px;
+        margin: 0 auto;
+    }
+
+    .right_content {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        font-size: 68px;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .controls {
+        gap: 8px;
+
+        flex-direction: column;
+
+        button {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) and (max-height: 700px) {
+    .right {
+        padding-top: 160px;
+    }
+}

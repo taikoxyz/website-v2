@@ -1,0 +1,195 @@
+.suptitle {
+    padding-left: 35px;
+
+    font: 600 14px/1.2 $kFontPublicSans;
+    letter-spacing: 0.04em;
+    color: $kColorPink;
+    text-transform: uppercase;
+}
+
+.list {
+    margin-top: 32px;
+    @include grid(2, 20);
+}
+
+.list_item {
+    padding: 40px 24px 24px 32px;
+    border-radius: 30px;
+    background: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.list_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_index {
+    font: 600 14px/1.2 $kFontPublicSans;
+    letter-spacing: 0.04em;
+    color: $kColorPink;
+}
+
+.list_title {
+    margin-top: 36px;
+    font: 500 52px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: #22282B;
+}
+
+.list_spacer {
+    height: 105px;
+}
+
+.list_icon {
+    margin-top: auto;
+    width: 55px;
+    height: 55px;
+    transform: scale(1.4);
+    object-fit: contain;
+    object-position: center;
+}
+
+.list_text {
+    margin-top: 36px;
+    padding-right: 214px;
+    
+    font: 500 16px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .6);
+}
+
+.list_controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    padding: 20px 24px;
+    padding-right: 17px;
+
+    background: $kColorThemeWhite;
+    border-radius: 30px 0 0 0;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border-radius: 0 0 30px 0;
+        box-shadow: 12px 12px 0 12px $kColorThemeWhite;
+        position: absolute;
+    }
+
+    &::before {
+        right: 100%;
+        bottom: 0;
+    }
+
+    &::after {
+        right: 0;
+        bottom: 100%;
+    }
+}
+
+.list_button {
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .list_title {
+        font-size: 42px;
+    }
+
+    .list_spacer {
+        height: 75px;
+    }
+
+    .list_text {
+        padding-right: 180px;
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .list_title {
+        font-size: 38px;
+    }
+
+    .list_text {
+        padding-right: 0;
+    }
+
+    .list_controls {
+        margin-top: 40px;
+        background: none;
+        position: relative;
+        inset: auto;
+        padding: 0;
+
+        &::before,
+        &::after {
+            display: none
+        }
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .list_title {
+        margin-top: 34px;
+        font-size: 36px;
+    }
+
+    .list_index {
+        font: 600 20px/1.4 $kFontClashGrotesk;
+        letter-spacing: -.03em;
+        color: rgba(#000, .2);
+    }
+
+    .list_text {
+        margin-top: 30px;
+    }
+
+    .list_controls {
+        padding-top: 40px;
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .list {
+        @include grid(1, 20);
+    }
+
+    .suptitle {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .list_item {
+        padding: 25px 20px 20px;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .list_title {
+        font-size: 28px;
+    }
+
+    .list_icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .list_index {
+        font-size: 18px;
+    }
+}

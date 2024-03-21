@@ -1,0 +1,55 @@
+button {
+    cursor: pointer;
+    // display: block;
+    border: none;
+    font-family: inherit;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+input:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+a {
+    // display: block;
+    color: inherit;
+    text-decoration: none;
+}
+input,
+textarea {
+    font-family: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 100%;
+    resize: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+span {
+    font: inherit;
+}

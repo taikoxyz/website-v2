@@ -1,0 +1,98 @@
+.wrapper {
+    padding: 115px 22px 46px;
+    border-radius: 20px;
+    background: #FFF;
+    display: flex;
+}
+
+.left {
+    width: 26%;
+    flex-shrink: 0;
+}
+
+.right {
+    padding-top: 25px;
+    width: 74%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.title {
+    max-width: 550px;
+    font: 500 55px/.9 $kFontClashGrotesk;
+    color: #22282B;
+}
+
+.button {
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: $kLaptopM) {
+    .title {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .left {
+        width: 22%;
+    }
+
+    .right {
+        padding-top: 0;
+        width: 78%;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .wrapper {
+        padding-top: 90px;
+        padding-bottom: 32px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 45px;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        font-size: 32px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .title {
+        font-size: 28px;
+    }
+
+    .wrapper {
+        gap: 28px;;
+    }
+
+    .right {
+        gap: 18px;
+    }
+}

@@ -1,0 +1,133 @@
+.advantages {
+    padding-bottom: 60px;
+}
+
+.list {
+    margin: 0 auto;
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include grid(2, 80, 0);
+
+    &_item {
+        max-width: 332px;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        flex-shrink: 1;
+
+        background: #EFEFEF;
+
+        transition: background .75s ease .45s;
+
+        &:nth-child(even) {
+            margin-top: 85px;
+        }
+    }
+}
+
+.list_border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    border-radius: 0 0 30px 0;
+    background: $kColorThemeWhite;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border-radius: 30px 0 0 0;
+        box-shadow: -12px -12px 0 10px $kColorThemeWhite;
+        position: absolute;
+    }
+
+    &::before {
+        left: 100%;
+        top: 0;
+    }
+
+    &::after {
+        left: 0;
+        top: 100%;
+    }
+}
+
+.list_icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EFEFEF;
+    transition: background .75s ease .45s;
+
+    svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+}
+
+.list_item {
+    position: relative;
+    padding: 14px 28px 25px 24px;
+}
+
+.list_title {
+    padding-left: 56px;
+    font: 500 20px/1.255 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.list_text {
+    margin-top: 40px;
+    font: 400 14px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: #fff;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: $kTabletM) {
+    .list {
+        @include grid(2, 30, 0);
+
+        &_item {
+            &:nth-child(even) {
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $kMobileXXL) {
+    .advantages {
+        padding-bottom: 20px;
+    }
+    
+    .list {
+        @include grid(1, 32, 32);
+
+        &_item {
+            &:nth-child(even) {
+                margin-top: auto;
+            }
+        }
+    }
+}

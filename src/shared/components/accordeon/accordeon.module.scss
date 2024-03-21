@@ -1,0 +1,48 @@
+.accordeon {
+    background: #FFF;
+    border-radius: 20px;
+
+    &Active {
+        button {
+            svg {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+.button {
+    padding: 40px 36px;
+    border-radius: 20px;
+    width: 100%;
+
+    text-align: left;
+
+    font: 500 28px/.84 $kFontClashGrotesk;
+    color: $kColorBlack;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    svg {
+        width: 1.28em;
+        height: 1.28em;
+        stroke: #292D32;
+        transition: transform .2s ease;
+        flex-shrink: 0;
+    }
+}
+
+.content {
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.content_inner {
+    padding: 0 36px 36px;
+
+    font: 400 18px/1.2 $kFontPublicSans;
+    color: rgba($kColorBlack, .6);
+}

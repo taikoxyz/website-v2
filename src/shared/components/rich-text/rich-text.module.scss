@@ -1,0 +1,75 @@
+.text {
+    font: 400 16px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.9);
+
+    p {
+        min-height: 1.255em;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 0.3em 0;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    h4,
+    h5 {
+        font: 500 26px/1.2 $kFontClashGrotesk;
+        letter-spacing: -0.02em;
+        color: rgba($kColorBlack, 0.9);
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    strong {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    ol {
+        padding-left: 1.2em;
+    }
+
+    ul {
+        list-style: unset;
+        padding-left: 1.2em;
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .text {
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0.1em 0;
+        }
+
+        h4,
+        h5 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        strong {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.position {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0 22px;
+}
+
+.gap {
+    padding: 18px 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+@media screen and (max-width: $kTabletM) {
+    .header {
+        padding: 0 8px;
+    }
+
+    .gap {
+        padding-top: 8px;
+    }
+}

@@ -1,0 +1,109 @@
+.grant {
+    padding-top: 60px;
+}
+
+.wrapper {
+    padding: 50px 22px 22px;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.content {
+    display: flex;
+}
+
+.content_left {
+    width: 320px;
+}
+
+.content_right {
+    width: calc(100% - 340px);
+}
+
+.suptitle {
+    max-width: 100px;
+    font: 600 14px/1.2 $kFontPublicSans;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $kColorPink;
+}
+
+.text {
+    max-width: 630px;
+    font: 500 44px/1 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: $kColorBlack;
+
+    span {
+        color: $kColorPink;
+    }
+}
+
+.banner {
+    margin-top: 44px;
+
+    [data-class='banner'] {
+        @include strokeGradient(
+            linear-gradient(#fff, #fff),
+            linear-gradient(to right, #ea36a4, #f997d0)
+        );
+        border-width: 3px;
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .content_left {
+        width: 210px;
+    }
+
+    .content_right {
+        width: calc(100% - 210px);
+    }
+
+    .text {
+        font-size: 36px;
+        max-width: 520px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    .content_left,
+    .content_right {
+        width: 100%;
+    }
+
+    .banner {
+        margin-top: 70px;
+    }
+
+    .text {
+        font-size: 32px;
+        max-width: 460px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .wrapper {
+        padding: 40px 20px 20px;
+    }
+
+    .banner {
+        margin: 70px -20px -20px;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .text {
+        font-size: 24px;
+    }
+}

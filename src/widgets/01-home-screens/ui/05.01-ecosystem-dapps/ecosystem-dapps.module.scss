@@ -1,0 +1,90 @@
+.dapps {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &Active {
+        .logos_item {
+            transform: translateX(0) !important;
+        }
+
+        .content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.logos {
+    display: flex;
+}
+
+.logos_item {
+    position: relative !important;
+    inset: auto !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    transition: transform .8s cubic-bezier(.17,.67,.75,1.29);
+
+    + .logos_item {
+        margin-left: -15px;
+    }
+
+    @for $i from 2 through 4 {
+        &:nth-child(#{$i}) {
+            transform: translateX(
+                calc(#{(-100% * ($i - 1))} + 15px * ($i - 1))
+            );
+        }
+    }
+}
+
+.content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 1s ease;
+    transition-property: opacity, transform;
+}
+
+.title {
+    font: 500 26px/1.255 $kFontClashGrotesk;
+    letter-spacing: -.01em;
+    color: $kColorBlack;
+    width: 50px;
+}
+
+.text {
+    margin-top: 3px;
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .4);
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .logos_item {
+        width: 41px;
+        height: 41px;
+
+        + .logos_item  {
+            margin-left: -12px;
+
+            &:not(:last-child) {
+                border-width: 3.5px;
+            }
+        }
+
+        @for $i from 2 through 4 {
+            &:nth-child(#{$i}) {
+                transform: translateX(
+                    calc(#{(-100% * ($i - 1))} + 12px * ($i - 1))
+                );
+            }
+        }
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,79 @@
+.wrapper {
+    padding: 33px 35px;
+    border-radius: 32px;
+    @include strokeGradient(
+        linear-gradient($kColorThemeWhite, $kColorThemeWhite),
+        linear-gradient(to right, #EA36A4, #F997D0)
+    );
+    border-width: 3px;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.text {
+    font: 500 40px/1.05 $kFontClashGrotesk;
+    color: $kColorPink;
+}
+
+.button {
+    margin-left: auto;
+
+    button,
+    a {
+        white-space: nowrap; 
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .text {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .wrapper {
+        gap: 24px;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .wrapper {
+        padding: 50px 20px 30px;
+        border-radius: 28px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .icon {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,-50%);
+    }
+
+    .text {
+        text-align: center;
+        max-width: 380px;
+    }
+
+    .button {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .text {
+        font-size: 26px;
+        max-width: 230px;
+    }
+
+    .icon {
+        font-size: 14px;
+    }
+}

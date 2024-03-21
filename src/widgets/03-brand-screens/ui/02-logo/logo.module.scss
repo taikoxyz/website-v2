@@ -1,0 +1,152 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suptitle {
+    font: 500 20px/0.915 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: #22282b;
+    padding-bottom: 22px;
+
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 66px;
+        height: 2px;
+        background: $kColorPink;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.content {
+    margin-top: 32px;
+    display: flex;
+}
+
+.content_left {
+    width: 85px;
+    padding-right: 20px;
+    flex-shrink: 0;
+}
+
+.content_right {
+    width: calc(100% - 85px);
+    border-radius: 25px;
+
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+}
+
+.logoActive {
+    max-width: 340px;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list_item {
+    border: 2px solid transparent;
+    border-radius: 15.6px;
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    &Active {
+        border-color: rgba(#000, .25);
+        cursor: default;
+    }
+}
+
+.list_logo {
+    width: 40px;
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .logoActive {
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .content_left,
+    .content_right {
+        max-width: 100%;
+        width: 100% ;
+    }
+
+    .content_left {
+        padding-right: 0;
+    }
+
+    .content_right {
+        order: -1;
+        min-height: 320px;
+    }
+
+    .list {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .logoActive {
+        max-width: 240px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .suptitle {
+        margin: 0 auto;
+
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .centered {
+        margin: 50px auto 0;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .content_right {
+        min-height: 230px;
+        border-radius: 19px;
+    }
+
+    .logoActive {
+        max-width: 190px;
+    }
+
+    .list_item {
+        width: 59px;
+        height: 59px;
+        border-radius: 14px;
+    }
+}

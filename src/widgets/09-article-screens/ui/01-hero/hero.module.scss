@@ -1,0 +1,78 @@
+.hero {
+    padding: 12px 22px 28px;
+    border-radius: 20px;
+    background: #FFFFFF;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tag {
+    margin-left: -10px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: #F8F8F8;
+
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .4);
+
+    text-transform: uppercase;
+}
+
+.title {
+    max-width: 1050px;
+    font: 500 40px/1 $kFontClashGrotesk;
+    color: #22282B;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.info_item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        stroke: #909DA2;
+    }
+
+    span {
+        font: 500 16px/1.4 $kFontPublicSans;
+        letter-spacing: -.02em;
+        color: #909DA2;
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .title {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .hero {
+        padding: 12px 20px 20px;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .title {
+        font-size: 24px;
+    }
+}

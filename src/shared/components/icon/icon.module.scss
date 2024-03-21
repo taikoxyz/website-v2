@@ -1,0 +1,66 @@
+.icon {
+    font-size: 16px;
+    width: 3.5em;
+    height: 3.5em;
+    flex-shrink: 0;
+    border-radius: .875em;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    svg {
+        width: 1.5em;
+        height: 1.5em;
+        stroke: #292D32;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 1px solid #FFF;
+        border-radius: 1.0625em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: pulse 2s ease infinite;
+    }
+
+    &::before {
+        animation-delay: -1.5s;
+    }
+}
+
+.icon_pink {
+    background: linear-gradient(90deg, #EA36A4 -9.56%, #F997D0 100%);
+
+    svg {
+        stroke: #FFF;
+    }
+
+    &::before,
+    &::after {
+        border-color: $kColorPink;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.3);
+        opacity: 0;
+    }
+}

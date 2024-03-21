@@ -1,0 +1,100 @@
+.project {
+    padding: 31px;
+    border-radius: 35px;
+    background: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: contain;
+}
+
+.label {
+    padding: 5px 10px;
+    border-radius: 100px;
+
+    font: 700 14px/1 $kFontPublicSans;
+    color: #FFF;
+    background: #5D636F;
+
+    &Testnet {
+        background: $kColorPink;
+    }
+}
+
+.title {
+    margin-top: 30px;
+    font: 500 32px/1.1 $kFontClashGrotesk;
+    color: $kColorBlack;
+}
+
+.text {
+    margin-top: 3px;
+    font: 400 14px/1.25 $kFontPublicSans;
+    letter-spacing: 0.01em;
+    color: #444A55;
+}
+
+.categories {
+    padding-top: 20px;
+    margin-top: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.categories_item {
+    padding: 5px 10px;
+    border-radius: 100px;
+    background: #FFC6E9;
+
+    font: 500 14px/1.1 $kFontPublicSans;
+    color: #444A55;
+}
+
+@media screen and (max-width: $kTabletM) {
+    .project {
+        padding: 24px;
+    }
+
+    .icon {
+        width: 66px;
+        height: 66px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .categories {
+        padding-top: 18px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .icon {
+        width: 54px;
+        height: 54px;
+        // border-radius: 11px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}

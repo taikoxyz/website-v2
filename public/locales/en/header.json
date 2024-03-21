@@ -1,0 +1,82 @@
+{
+    "navigation": [
+        { 
+            "name": "Build",
+            "suptitle": "Solution",
+            "links": [
+                { 
+                    "name": "Solution", 
+                    "url": "/solutions", 
+                    "icon": "/img/icons/nav-solutions.svg",
+                    "bold": true
+                },
+                { 
+                    "name": "Bridge", 
+                    "url": "https://bridge.katla.taiko.xyz/", 
+                    "icon": "/img/icons/nav-bridge.svg" 
+                }, { 
+                    "name": "Swap", 
+                    "url": "https://swap.katla.taiko.xyz/", 
+                    "icon": "/img/icons/nav-swap.svg" 
+                }, { 
+                    "name": "Documentation", 
+                    "url": "https://docs.taiko.xyz/start-here/getting-started",
+                    "icon": "/img/icons/nav-docs.svg" 
+                }, { 
+                    "name": "Explorer", 
+                    "url": "https://explorer.katla.taiko.xyz/",
+                    "icon": "/img/icons/nav-explorer.svg" 
+                }
+            ] 
+        }, { 
+            "name": "Explore",
+            "links": [
+                { 
+                    "name": "Ecosystem", 
+                    "url": "/ecosystem", 
+                    "icon": "/img/icons/nav-ecosystem.svg" 
+                }, { 
+                    "name": "Blog", 
+                    "url": "/blog", 
+                    "icon": "/img/icons/nav-blog.svg" 
+                }, { 
+                    "name": "Events", 
+                    "url": "/events",
+                    "icon": "/img/icons/nav-events.svg" 
+                }, { 
+                    "name": "Grants", 
+                    "url": "/grant-program",
+                    "icon": "/img/icons/nav-grants.svg" 
+                }
+            ] 
+        }, { 
+            "name": "Contribute",
+            "links": [
+                { 
+                    "name": "About Us", 
+                    "url": "/about", 
+                    "icon": "/img/icons/nav-about.svg" 
+                },
+                { 
+                    "name": "Brand Kit", 
+                    "url": "/brand-assets", 
+                    "icon": "/img/icons/nav-brandkit.svg" 
+                },
+                { 
+                    "name": "Careers", 
+                    "url": "/careers", 
+                    "icon": "/img/icons/nav-careers.svg" 
+                }
+            ] 
+        }
+    ],
+    "socials": [
+        {
+            "icon": "socials:github",
+            "url": "https://github.com/taikoxyz"
+        }, {
+            "icon": "socials:discord",
+            "url": "https://discord.com/invite/taikoxyz"
+        }
+    ]
+}

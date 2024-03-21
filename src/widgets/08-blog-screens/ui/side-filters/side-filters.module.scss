@@ -1,0 +1,55 @@
+.side {
+    padding: 32px 8px 8px;
+    border-radius: 25px;
+    background: #FFF;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding: 0 28px;
+}
+
+.title {
+    font: 500 28px/.85 $kFontClashGrotesk;
+    color: #22282B; 
+}
+
+.resetBtn {
+    font: 600 16px/1.255  $kFontPublicSans;
+    letter-spacing: -.02em;
+    color: rgba(#000, .4);
+}
+
+.filters {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .side {
+        padding: 8px;
+    }
+
+    .headers {
+        padding: 10px 8px 0;
+    }
+
+    .filters {
+        margin-top: 10px;
+        // margin-top: 0;
+        flex-direction: row;
+        @include grid(2, 30, 30, div);
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .filters {
+        @include grid(1, 8, 8, div);
+    }
+}

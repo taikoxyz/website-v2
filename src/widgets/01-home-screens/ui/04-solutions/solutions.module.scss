@@ -1,0 +1,323 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.solution {
+    width: calc(59.3% - 8px);
+    padding: 55px 32px 35px;
+    border-radius: 30px;
+    background: #ffffff;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.corner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 22px;
+    padding-top: 22px;
+    background: $kColorThemeWhite;
+    border-radius: 40px 0 0 0;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        position: absolute;
+        border-radius: 0 0 30px 0;
+        box-shadow: 12px 12px 0 12px $kColorThemeWhite;
+    }
+
+    &::before {
+        right: 100%;
+        bottom: 0;
+    }
+
+    &::after {
+        right: 0;
+        bottom: 100%;
+    }
+
+    button,
+    a {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.suptitle {
+    font: 600 14px/1.2 $kFontPublicSans;
+    letter-spacing: 0.04em;
+    color: $kColorPink;
+
+    text-transform: uppercase;
+}
+
+.title {
+    margin-top: 36px;
+    max-width: 700px;
+
+    font: 500 60px/0.95 $kFontClashGrotesk;
+    height: 2.85em;
+    letter-spacing: -0.02em;
+    color: #22282b;
+
+    b, strong, span {
+        font-weight: 600;
+    }
+}
+
+.footer {
+    padding-top: 90px;
+    margin-top: auto;
+    padding-right: 200px;
+}
+
+.text {
+    font: 500 18px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.8);
+    height: calc(1.255em * 3);
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.list {
+    width: calc(40.7% - 8px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list_item {
+    // background: #f3f3f3;
+
+    &Active {
+        .list_wrapper:global(.--animate) {
+            background: #fff !important;
+            cursor: default;
+            transition: background 0.3s ease;
+
+            .list_icon {
+                opacity: 1;
+                transform: translateY(-50%) scale(1.4);
+            }
+
+            .list_title {
+                color: #22282b;
+            }
+        }
+    }
+}
+
+.list_wrapper {
+    padding: 48px 30px;
+    border-radius: 25px;
+    position: relative;
+    background: transparent;
+    transition: background 0.75s ease;
+    cursor: pointer;
+
+    &:global(.--animate) {
+        .list_wrapper {
+            background: #f3f3f3;
+        }
+
+        .list_index {
+            opacity: 1;
+        }
+
+        .list_title {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+.list_index {
+    font: 600 20px/1.4 $kFontClashGrotesk;
+    letter-spacing: -0.03em;
+    color: rgba(#000, 0.2);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.list_icon {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    right: 58px;
+    top: 50%;
+    transform: translateY(-50%) scale(0.5);
+    opacity: 0;
+
+    transition: 0.3s ease;
+    transition-property: opacity, transform;
+}
+
+.list_title {
+    margin-top: 24px;
+    font: 500 36px/1.15 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: rgba(#22282b, 0.3);
+    width: 320px;
+    max-width: calc(100% - 103px);
+    transition: color 0.3s ease, opacity 0.75s ease, transform 0.75s ease;
+    transform: translateX(20px);
+    opacity: 0;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.list_text {
+    max-width: 480px;
+    margin-top: 30px;
+    font: 500 18px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.8);
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .title {
+        margin-top: 24px;
+        font-size: 46px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .list_item {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list_wrapper {
+        padding: 30px 24px;
+        flex-grow: 1;
+    }
+
+    .list_index {
+        font-size: 18px;
+    }
+
+    .list_title {
+        margin-top: 16px;
+        font-size: 28px;
+        width: 260px;
+    }
+
+    .list_icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .title {
+        font-size: 36px;
+    }
+
+    .list_title {
+        font-size: 24px;
+    }
+
+    .list_icon {
+        width: 48px;
+        height: 48px;
+        right: 40px;
+    }
+
+    .text {
+        height: 6em;
+    }
+
+    .footer {
+        padding-right: 180px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .list {
+        width: 100%;
+    }
+
+    .list_title {
+        font-size: 32px;
+        width: 400px;
+    }
+
+    .list_icon {
+        width: 60px;
+        height: 60px;
+        right: 58px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .list_wrapper {
+        background: #ffffff !important;
+        padding: 25px 20px 34px;
+    }
+
+    .list_itemActive {
+        .list_icon {
+            transform: scale(1);
+        }
+    }
+
+    .list_header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list_title {
+        max-width: 326px;
+        font-size: 36px;
+        margin-top: 34px;
+        color: #22282b !important;
+    }
+
+    .list_icon {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        transform: scale(1) !important;
+        opacity: 1 !important;
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .list_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .list_title {
+        font-size: 30px;
+        margin-top: 22px;
+        width: auto;
+    }
+
+    .list_text {
+        font-size: 14px;
+        max-width: 260px;
+    }
+}

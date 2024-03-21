@@ -1,0 +1,146 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $kIndexMenu;
+    background: $kColorThemeWhite;
+
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu_wrapper {
+    padding: 108px 20px 45px;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 2;
+}
+
+.menu_title {
+    padding-left: 8px;
+    font: 600 14px/1.2 $kFontPublicSans;
+    letter-spacing: .04em;
+    color: rgba($kColorBlack, .6);
+    text-transform: uppercase;
+}
+
+.menu_nav {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu_join {
+    padding-top: 40px;
+    margin-top: auto;
+
+    text-align: center;
+
+    font: 700 12px/1.455 $kFontPublicSans;
+    letter-spacing: -.01em;
+    text-transform: uppercase;
+    color: $kColorBlack;
+
+    b {
+        font: inherit;
+        color: $kColorPink;
+    }
+}
+
+.menu_socials {
+    margin-top: 18px;
+    @include grid(5, 9.3, 9.3, a);
+}
+
+.menu_link {
+    padding: 19px;
+    border-radius: 13px;
+    background: #FFFFFF;
+    border: 2px solid transparent;
+    transition: border 0.2s ease;
+    font-size: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg, 
+    img {
+        width: 25.5px;
+        height: 25.5px;
+        flex-shrink: 0;
+        fill: rgba(#ACACAC, 0.5);
+
+        transition: fill .2s ease;
+    }
+
+    img {
+        opacity: 0.3;
+        transition: opacity .2s ease;
+    }
+
+    &:hover {
+        border-color: $kColorPink;
+
+        &:nth-child(1) svg {
+            fill: #5765F1;  
+        }
+
+        &:nth-child(2) svg {
+            fill: #1F9AEF;
+        }
+
+        &:nth-child(3) svg {
+            fill: #A92323;
+        }
+
+        &:nth-child(4) svg {
+            fill: $kColorPink;
+        }
+
+        &:nth-child(5) svg {
+            fill: #FF0000;
+        }
+
+        img {
+            opacity: 1;
+        }
+    }
+}
+
+.enter {
+    opacity: 0;
+}
+
+.enterActive {
+    opacity: 1;
+    transition: opacity .4s ease;
+}
+
+.exit {
+    opacity: 1;
+}
+
+.exitActive {
+    opacity: 0;
+    transition: opacity .4s ease;
+}

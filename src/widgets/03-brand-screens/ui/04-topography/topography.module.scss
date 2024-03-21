@@ -1,0 +1,311 @@
+.wrapper {
+    display: flex;
+}
+
+.left {
+    width: 48%;
+}
+
+.right {
+    width: 52%;
+}
+
+.card {
+    padding: 32px 32px 42px;
+    border-radius: 25px;
+    background: #FFF;
+}
+
+.suptitle {
+    font: 500 20px/0.915 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: #22282b;
+    padding-bottom: 22px;
+
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 66px;
+        height: 2px;
+        background: $kColorPink;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.title {
+    max-width: 570px;
+    margin-top: 72px;
+    font: 500 44px/1.05 $kFontClashGrotesk;
+    color: #10151B;
+}
+
+.list {
+    margin-top: 72px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.list_item {
+    display: flex;
+    gap: 24px;
+}
+
+.list_index {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid #7C828A;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font: 500 18px/1.3 $kFontPublicSans;
+    color: #7C828A;
+}
+
+.list_title {
+    padding-top: 6px;
+    font: 500 16px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: $kColorBlack;
+}
+
+.list_text {
+    max-width: 430px;
+    font: 400 16px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .7);
+}
+
+.fonts {
+    padding-top: 32px;
+    padding-left: 55px;
+    display: flex;
+}
+
+.fonts_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 50%;
+
+    padding-right: 30px;
+
+    &:first-child {
+        .fonts_list {
+            font-family: $kFontClashGrotesk;
+        }
+
+        .fonts_aa {
+            font: 600 230px/1.25 $kFontClashGrotesk;
+            color: #22282b;
+        }
+    }
+}
+
+.fonts_suptitle {
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: .1em;
+    color: rgba($kColorBlack, .6);
+
+    text-transform: uppercase;
+}
+
+.fonts_family {
+    margin-top: 26px;
+
+    font: 500 20px/.915 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: $kColorPink;
+}
+
+.fonts_list {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    font-family: $kFontPublicSans;
+    font-size: 20px;
+    letter-spacing: -.02em;
+    color: #22282b;
+}
+
+.fonts_button {
+    margin-top: auto;
+}
+
+.fonts_example {
+    margin-top: 32px;
+    width: 100%;
+
+    position: relative;
+    height: 154px;
+
+    &::before,
+    &::after,
+    span {
+        content: "";
+        display: block;
+        width: calc(100% + 30px);
+        flex-shrink: 0;
+        height: 1px;
+        background: rgba(#000, .1);
+        position: absolute;
+        left: 0;
+    }
+    
+    span {
+        top: 23%;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+}
+
+.fonts_aa {
+    height: 100%;
+}
+
+.fonts_up,
+.fonts_down {
+    width: 100%;
+}
+
+.fonts_down {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .title {
+        margin-top: 36px;
+        font-size: 36px;
+    }
+
+    .list {
+        margin-top: 36px;
+    }
+
+    .list_title {
+        padding-top: 0;
+    }
+
+    .fonts_item {
+        padding-right: 20px;
+    }
+
+    .fonts_example {
+        height: 115px;
+
+        &::before,
+        &::after,
+        span {
+            width: calc(100% + 20px);
+        }
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .fonts {
+        padding-left: 0;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .fonts {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .fonts_item {
+        flex-direction: row;
+    }
+
+    .fonts_list {
+        margin-top: 0;
+    }
+
+    .fonts_example {
+        &::after,
+        &::before,
+        span {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    .title {
+        margin-top: 46px;
+        font-size: 28px;
+        max-width: 360px;
+    }
+
+    .list_item {
+        gap: 16px;
+    }
+
+    .fonts_item {
+        gap: 20px;
+    }
+
+    .fonts_item {
+        padding-right: 0;
+    }
+
+    .fonts_family {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .fonts_example {
+        margin-top: 36px;
+        height: 40px;
+    }
+
+    .fonts_list {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .fonts_button {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .title {
+        margin-top: 32px;
+        font-size: 24px;
+    }
+}

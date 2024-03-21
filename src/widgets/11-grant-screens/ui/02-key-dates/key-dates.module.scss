@@ -1,0 +1,146 @@
+.content {
+    border-top: 1px solid rgba(#000, .1);
+    padding-top: 40px;
+    display: flex;
+}
+
+.content_left {
+    width: 365px;
+    flex-shrink: 0;
+}
+
+.content_right {
+    flex-grow: 1;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    font: 500 40px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: $kColorBlack;
+
+    span {
+        max-width: 5.5em;
+    }
+
+
+    svg {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        stroke: $kColorBlack;
+    }
+}
+
+.list {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list_item {
+    padding: 40px 36px;
+    border-radius: 20px;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+}
+
+.list_title {
+    font: 500 28px/.84 $kFontClashGrotesk;
+    color: $kColorBlack;
+    width: 240px;
+    padding-right: 15px;
+    flex-shrink: 0;
+}
+
+.list_description {
+    flex-grow: 1;
+
+    font: 400 16px/1.72 $kFontPublicSans;
+    letter-spacing: -.02em;
+    color: rgba($kColorBlack, .6);
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+}
+
+.titles_date,
+.titles_description {
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .3);
+    text-transform: uppercase;
+}
+
+.titles_date {
+    width: 276px;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .content_left {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .content_left {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .list {
+        margin-top: 0;
+    }
+
+    .list_item {
+        padding: 24px 20px;
+    }
+
+    .list_title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        font-size: 28px;
+    }
+
+    .list_title {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .list_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}

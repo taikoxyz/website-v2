@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.arrow {
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #F2F2F2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background .1s ease;
+
+    svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    &Next {
+        transform: rotate(-180deg);
+    }
+
+    &:hover {
+        background: darken(#F2F2F2, 5%);
+    }
+}
+
+.monthBtn {
+    font: 500 20px/1.02 $kFontClashGrotesk;
+    color: #4F4F4F;
+    padding: 4px 6px;
+    border-radius: 4px;
+
+    transition: background .1s ease;
+
+    &:hover {
+        background: rgba(#4F4F4F, .05);
+    }
+}
