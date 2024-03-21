@@ -1,0 +1,39 @@
+.root {
+    position: relative;
+}
+
+.circles {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.circles_item {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: blur(15px);
+
+    transition: 
+        transform .75s ease,
+        opacity .1s ease .75s;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+

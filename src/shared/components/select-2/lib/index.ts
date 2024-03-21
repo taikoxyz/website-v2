@@ -1,0 +1,1 @@
+export { getTextWidthMax } from './getTextWidthMax';

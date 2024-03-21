@@ -1,0 +1,20 @@
+.link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        stroke: $kColorBlack;
+        transform: scaleX(-1);
+    }
+
+    span {
+        font: 600 12px/1.255 $kFontPublicSans;
+        letter-spacing: -.01em;
+        color: rgba($kColorBlack, .6);
+        text-transform: uppercase;
+    }
+}

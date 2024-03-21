@@ -1,0 +1,118 @@
+.career {
+    padding: 40px 36px;
+    border-radius: 20px;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+}
+
+.column_grow {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.column_420 {
+    width: 40.8%;
+    flex-shrink: 0;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+
+    .text {
+        width: 50%;
+    }
+}
+
+.column_70 {
+    width: 70px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    max-width: 440px;
+    font: 500 28px/1 $kFontClashGrotesk;
+    color: $kColorBlack;
+}
+
+.text {
+    font: 400 16px/1.72 $kFontPublicSans;
+    letter-spacing: -.02em;
+    color: rgba($kColorBlack, .6);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font: 600 14px/1 $kFontPublicSans;
+    color: $kColorBlack;
+
+    svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        stroke: $kColorBlack;
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .career {
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .career {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 24px 20px;
+    }
+
+    .column_grow,
+    .column_420 {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .column_420 {
+        .text {
+            width: auto;
+
+            + .text {
+                display: flex;
+                align-items: center;
+
+                &::before {
+                    margin: 0 10px;
+                    content: "";
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background: rgba(#3C4049, .2);
+                }
+            }
+        }
+    }
+
+    .column_70 {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

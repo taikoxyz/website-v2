@@ -1,0 +1,46 @@
+.content {
+    padding: 40px 36px;
+    border-radius: 30px;
+    background: #FFF;
+}
+
+.nav {
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid rgba(#000, .15);
+}
+
+.text {
+    font-size: 18px;
+
+    h4,
+    h5 {
+        font: 600 26px/1.255 $kFontClashGrotesk;
+        letter-spacing: -.01em;
+    }
+
+    strong {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .content {
+        padding: 32px 28px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .content {
+        padding: 26px 20px;
+    }
+
+    .text {
+        font-size: 16px;
+
+        strong {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.valueContainer {
+    position: relative;
+    display: flex;
+}
+
+.value {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    flex: 1 1
+}
+
+.value_default {
+    padding: 10px 0;
+    font: 400 16px/1.25 $kDefaultFont;
+    color: #000;
+}
+
+.arrow {
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_default {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+    img {
+        width: 75%;
+        height: 75%;
+    }
+}

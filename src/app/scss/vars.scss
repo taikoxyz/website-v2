@@ -1,0 +1,44 @@
+// SCSS Variables
+
+// Containers
+$kContainer: 1470px;
+
+// Paddings
+$kPadding: 40px;
+$kPaddingTablet: 25px;
+$kPaddingMobile: 15px;
+
+// Colors
+$kColorBlack: #0B101B;
+$kColorGray: #5D636F;
+$kColorPink: #E81899;
+$kColorThemeWhite: #F8F8F8;
+
+// Fonts
+$kFontPublicSans: "Public Sans";
+$kFontGilroy: "Gilroy";
+$kFontOnest: "Onest";
+$kFontHelveticaNeue: "Helvetica Neue";
+$kFontClashGrotesk: "Clash Display";
+
+$kDefaultFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+  'Open Sans', 'Helvetica Neue', sans-serif;
+
+// Indexes
+$kIndexModal: 500;
+$kIndexHeader: 350;
+$kIndexMenu: 300;
+$kIndexDropdown: 200;
+
+// Groups
+
+// Media breakpoints
+$kLaptopXXL: 1600px;
+$kLaptopM: 1366px;
+$kLaptopSM: 1124px;
+$kTabletXXL: 991px;
+$kTabletM: 768px;
+$kTabletSM: 656px;
+$kMobileXXL: 565px;
+$kMobileM: 465px;
+$kMobileSM: 376px;

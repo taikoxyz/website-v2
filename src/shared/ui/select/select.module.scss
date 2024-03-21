@@ -1,0 +1,90 @@
+.root {
+    position: relative;
+
+    &Active {
+        .arrowIcon {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &Disabled {
+        opacity: 0.6;
+        .valueContainer {
+            cursor: default;
+        }
+    }
+}
+
+.valueContainer {
+    padding: 0 24px;
+    height: 48px;
+    border-radius: 10px;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.input {
+    height: 100%;
+    font: 500 15px/1.2 $kDefaultFont;
+    color: #909090;
+    flex-grow: 1;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.arrowIcon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    stroke: $kColorBlack;
+
+    transform: rotate(90deg);
+}
+
+.list {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: calc(100% + 10px);
+    border-radius: 10px;
+    background: #fff;
+
+    max-height: calc(48px * 5);
+    overflow: auto;
+
+    &_item {
+        padding: 8px 24px;
+        height: 48px;
+
+        display: flex;
+        align-items: center;
+
+        font: 500 14px/1.2 $kDefaultFont;
+        color: #000;
+
+        &:hover {
+            background: rgba(#000, 0.05);
+            cursor: pointer;
+        }
+
+        &Active {
+            cursor: default;
+            opacity: 0.4;
+        }
+    }
+}
+
+.value,
+.placeholder {
+    font: 500 16px/1.2 $kDefaultFont;
+    color: #000;
+}
+
+.placeholder {
+    opacity: 0.5;
+}

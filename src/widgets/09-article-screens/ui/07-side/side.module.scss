@@ -1,0 +1,34 @@
+.backButton {
+    font-size: 0;
+
+    svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+
+        stroke: $kColorBlack;
+
+        transform: rotate(-180deg);
+    }
+
+    span {
+        font: 600 12px/1.255 $kFontPublicSans;
+        letter-spacing: -0.01em;
+        color: rgba($kColorBlack, 0.6);
+        text-transform: uppercase;
+    }
+}
+
+.backContent {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav {
+    margin-top: 84px;
+}
+
+.share {
+    margin-top: 44px;
+}

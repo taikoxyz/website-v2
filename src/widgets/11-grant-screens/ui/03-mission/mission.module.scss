@@ -1,0 +1,98 @@
+.title {
+    margin-left: 20px;
+    font: 500 55px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: $kColorBlack;
+    max-width: 6.2em;
+
+    span {
+        color: $kColorPink;
+    }
+}
+
+.list {
+    margin-top: 32px;
+    @include grid(4, 20);
+}
+
+.list_item {
+    padding: 22px 28px 38px;
+    border-radius: 30px;
+    background: #FFF;
+}
+
+.list_icon {
+    width: 112px;
+    height: 112px;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+.list_title {
+    margin-top: 54px;
+
+    font: 500 28px/.95 $kFontClashGrotesk;
+    color: $kColorBlack;
+}
+
+.list_text {
+    margin-top: 32px;
+
+    font: 400 16px/1.2 $kFontPublicSans;
+    letter-spacing: -.02em;
+    color: rgba($kColorBlack, .6);
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .list {
+        @include grid(2, 20)
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .title {
+        font-size: 46px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .list_icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .list_title {
+        margin-top: 24px;
+        font-size: 24px;
+    }
+
+    .list_text {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: $kTabletSM) {
+    .list {
+        @include grid(1, 16);
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        font-size: 36px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .list_item {
+        padding: 22px 20px 35px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: $kMobileM) {
+    .list_title {
+        font-size: 20px;
+    }
+}

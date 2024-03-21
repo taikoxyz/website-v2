@@ -1,0 +1,81 @@
+{
+    "copyright": "© 2024 Taiko Labs",
+    "joinTaiko": "Join the taiko <b>community</b>",
+    "content": {
+        "title": "Taiko Labs",
+        "text": "The most developer-friendly and secure Ethereum scaling solution."
+    },
+    "subscribe": {
+        "stayUpdated": "Stay updated! \nDive into the latest Taiko developer news",
+        "subscribe": "Subscribe",
+        "email": "Email"
+    },
+    "nav": [
+        {
+            "title": "About",
+            "list": [
+                { 
+                    "name": "Blog", 
+                    "url": "/blog"
+                }, {
+                    "name": "Careers",
+                    "url": "/careers"
+                }, {
+                    "name": "Brand kit",
+                    "url": "/brand-assets"
+                }
+            ]
+        }, {
+            "title": "Developers",
+            "list": [
+                {
+                    "name": "Get started",
+                    "url": "https://docs.taiko.xyz/start-here/getting-started"
+                }, {
+                    "name": "Github",
+                    "url": "https://github.com/taikoxyz"
+                }
+            ]
+        }, {
+            "title": "Solutions",
+            "list": [
+                {
+                    "name": "Bridge",
+                    "url": "https://bridge.katla.taiko.xyz/"
+                }, {
+                    "name": "Swap",
+                    "url": "https://swap.katla.taiko.xyz/"
+                }, {
+                    "name": "Documentation",
+                    "url": "https://docs.taiko.xyz/"
+                }, {
+                    "name": "Explorer",
+                    "url": "https://explorer.katla.taiko.xyz/"
+                }
+            ]
+        }
+    ],
+    "socials": [
+        {
+            "icon": "gsocial:discord",
+            "name": "discord",
+            "url": "https://discord.com/invite/taikoxyz"
+        }, {
+            "icon": "gsocial:twitter",
+            "name": "twitter",
+            "url": "https://twitter.com/taikoxyz"
+        }, {
+            "icon": "gsocial:mirror",
+            "name": "mirror",
+            "url": "https://taiko.mirror.xyz/"
+        }, {
+            "icon": "gsocial:taiko",
+            "name": "forum",
+            "url": "https://community.taiko.xyz/"
+        }, {
+            "icon": "gsocial:youtube",
+            "name": "youtube",
+            "url": "https://www.youtube.com/@taikoxyz"
+        }
+    ]
+}

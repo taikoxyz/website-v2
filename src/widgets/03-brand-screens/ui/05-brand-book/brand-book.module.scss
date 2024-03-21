@@ -1,0 +1,9 @@
+.brandBook {
+    padding: 0 40px;
+}
+
+@media screen and (max-width: $kTabletM) {
+    .brandBook {
+        padding: 0;
+    }
+}

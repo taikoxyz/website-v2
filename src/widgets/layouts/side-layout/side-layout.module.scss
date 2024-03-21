@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+}
+
+.side {
+    width: 376px;
+    padding-right: 36px;
+    flex-shrink: 0;
+}
+
+.children {
+    width: calc(100% - 376px);
+}
+
+@media screen and (max-width: $kLaptopXXL) {
+    .side {
+        width: 350px;
+        padding-right: 25px;
+    }
+
+    .children {
+        width: calc(100% - 350px);
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .side {
+        width: 300px;
+        padding-right: 16px;
+    }
+    .children {
+        width: calc(100% - 300px);
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .children {
+        width: 100%;
+    }
+}

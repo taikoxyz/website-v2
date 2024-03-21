@@ -1,0 +1,96 @@
+{
+    "hero": {
+        "title": "Welcome to Taiko <span>Grants Cycle 2</span>!",
+        "text": "This grant cycle focuses on onboarding established partners, as well as rewarding community builders and contributors from the broader Ethereum ecosystem. \nThe total grant pool for Cycle 2 is $30 million equivalent in Taiko tokens spread across three grant tracks (Community, Partner & RFPs)."
+    },
+    "keyDates": {
+        "title": "Key Dates for Cycle 2",
+        "dateTitle": "date",
+        "descriptionTitle": "description",
+        "items": [
+            {
+                "date": "Dec 4th, 2023",
+                "description": "Cycle 2 Community Track applications open"
+            }, {
+                "date": "Jan 15th, 2024",
+                "description": "Deadline for Cycle 2 Community Track applications"
+            }, {
+                "date": "Feb 15th, 2024",
+                "description": "Review period concludes; grant winners are selected and can kickstart their missions!"
+            }
+        ]
+    },
+    "mission": {
+        "title": "Taiko Grants' <span>mission</span>",
+        "items": [
+            {
+                "icon": "/img/grant/mission-icon-1.svg",
+                "title": "Discover and support innovative, talented, and value-aligned developers",
+                "text": "that build up and build on the Taiko ecosystem, with the financial incentives and resources needed to bring their visions to life"
+            }, {
+                "icon": "/img/grant/mission-icon-2.svg",
+                "title": "Enable and encourage developers to launch novel applications",
+                "text": "and infrastructure products that will draw new users to the Taiko ecosystem and assist in its long-term growth."
+            }, {
+                "icon": "/img/grant/mission-icon-3.svg",
+                "title": "Help onboard established projects that everyone loves onto the Taiko ecosystem",
+                "text": "and help them attract new users through continuous support and by making them feel at home"
+            }, {
+                "icon": "/img/grant/mission-icon-4.svg",
+                "title": "Attract passionate community members",
+                "text": "who share Taiko's goals and the mission of the Taiko Grants program."
+            }
+        ]
+    },
+    "community": {
+        "suptitle": "Community-first approach",
+        "title": "We believe <span>deeply</span> in the power of the open-source community, particularly Ethereum’s, and welcome all builders who share this vision and believe in a more <span>equitable</span>, <span>permissionless</span>, and <span>transparent future</span>",
+        "text": "We also recognize that Taiko (or any blockchain, for that matter) would be nothing without its builders and community, and so we see our grantees as integral extensions of the Taiko team. As we look to transition from Taiko Labs into the Taiko Foundation and Taiko DAO, we expect the line between full-time engineers and community builders to become even more blurry. \nIn conjunction with launching our grant program, we also seek to experiment with the grant framework itself. That can mean the duration, style, council/decision-making body, and much more is up for experimentation and iteration. For grants and all ecosystem incentive programs, we are driven by our desire to achieve the best outcomes for the Taiko network — how we get there and who leads the way is something we want to shape together with you and the community.Hence, this is only the start of what we hope will be a long and educational journey for our community. \nFor now, if you have ideas on grant frameworks, we’d like to have this conversation with you on our community forum. Please share your frameworks — as detailed or brief as you see fit — as responses to the <u>grant thread</u> on our community forum.",
+        "learnMore": "Learn more about Grants Council"
+    },
+    "track": {
+        "title": "Grant Tracks",
+        "applyNow": "Apply now",
+        "items": [
+            {
+                "icon": "/img/grant/track-icon-2.svg",
+                "title": "Partner",
+                "track": "Track",
+                "text": "The Partner Track is aimed at established and mature projects or service providers. This track is suitable for projects that are already live, have some active users, and a sizeable community. <br/><br/> The track could also be suitable for a crypto service provider that is looking to integrate, support, or deploy on Taikoand would like to make a grant application. The goal is to onboard the projects/service providers everyone knows and loves to Taiko and make them feel at home.",
+                "timeline": "The Partner Track is an <b>ongoing track that is going to stay open</b> beyond Cycle 2.",
+                "active": false
+            }, 
+            {
+                "icon": "/img/grant/track-icon-3.svg",
+                "title": "Request for Proposal (RFP)",
+                "track": "Track",
+                "text": "The RFP Track is aimed at experienced builders or teams who want to work on high-impact projects that are submitted by Taiko Labs. These will typically be specific requests for features or solutions that relate to the Taiko protocol or ecosystem. The Taiko team will submit such requests, as and when needed, and invite proposals from the community. <br/><br/>A list of our current RFPs can be found below and applications are open to anyone, including established teams and prior grantees.",
+                "timeline": "The RFPs Track is an <b>ongoing track that is going to stay open</b> beyond Cycle 2.",
+                "active": false
+            }
+        ]
+    },
+    "support": {
+        "title": "Support and <span>FAQs</span>",
+        "text": "If you have any questions that you have yet to find answers to on the Taiko Grants HQ portal, join our <u>Discord</u> and head to the grants-support channel. Alternatively, you can also ask questions on the <u>Taiko community forum</u>.",
+        "faqs": [
+            {
+                "q": "Are startups or new ventures eligible for grants?",
+                "a": "Absolutely! As long as the project aligns with the mission and the specified criteria. Projects aiming to be open source or public goods are especially encouraged to apply for the Community Track."
+            }, {
+                "q": "How many grants are typically awarded in each track?",
+                "a": "There isn't a fixed number. It's based on the quality and relevance of applications received."
+            }, {
+                "q": "How should I determine the grant amount to request?",
+                "a": "Request what aligns with your project's needs, keeping in mind our mission and the potential impact. If the Grants Council asks you to justify the amount, be ready to give good reasons for your ask."
+            }, {
+                "q": "After submitting my proposal, what can I expect?",
+                "a": "Once you submit your proposal, the Grants Council will review it and come back to you with suggestions on how to improve your application, follow-up questions, and/or requests for a call. It's crucial to be responsive during this phase!"
+            }
+        ]
+    },
+    "banner": {
+        "title": "Learn more about application process",
+        "learnMore": "Learn more"
+    }
+}

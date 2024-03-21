@@ -1,0 +1,34 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.row {
+    display: flex;
+}
+
+.row_item {
+    width: (100% / 7);
+    height: 27.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &Title {
+        font: 400 14px/1.1 $kFontPublicSans;
+        color: #bdbdbd;
+        user-select: none;
+    }
+
+
+    &:first-child :global(.calendar-day-in-range)::before {
+        border-radius: 76px 0 0 76px;
+    }
+
+    &:last-child :global(.calendar-day-in-range)::before {
+        border-radius: 0 76px 76px 0;
+
+    }
+}

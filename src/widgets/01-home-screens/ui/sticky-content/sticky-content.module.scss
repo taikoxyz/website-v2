@@ -1,0 +1,21 @@
+.root {
+}
+
+.sticky {
+    padding: 40px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.sticky_scroll {
+    padding: 40px 0;
+    overflow: auto;
+    max-height: 100vh;
+}
+
+.children {
+    padding: 40px 0;
+    position: relative;
+    z-index: 2;
+}

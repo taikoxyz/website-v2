@@ -1,0 +1,76 @@
+.sort,
+.select {
+    display: inline-block;
+}
+
+.sort_text {
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.3);
+    text-transform: uppercase;
+}
+
+.sort_valueContainer {
+    padding: 0;
+    height: auto;
+    background: transparent;
+}
+
+.sort_value {
+    margin-left: 12px;
+    margin-right: 5px;
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: $kColorBlack;
+}
+
+.sort_list {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sort_listItem {
+    white-space: nowrap;
+}
+
+.select_text {
+    font: 600 12px/1.255 $kFontPublicSans;
+    text-transform: uppercase;
+}
+
+/* Select */
+
+.select_valueContainer {
+    gap: 16px;
+    padding: 27px 24px;
+    height: auto;
+    justify-content: space-between;
+}
+
+.select_value {
+    font: 600 12px/1.255 $kFontPublicSans;
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+.select_list {
+    padding: 15px 9px;
+    max-height: unset;
+}
+
+.select_listItem {
+    padding: 8px 15px;
+    border-radius: 8px;
+
+    font: 500 16px/1 $kFontPublicSans;
+    color: #444A55;
+
+    white-space: nowrap;
+}
+
+.select_listItemActive {
+    background: #F8F8F8 !important;
+    opacity: 1 !important; 
+}

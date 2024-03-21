@@ -1,0 +1,45 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: $kIndexModal;
+
+    overflow: hidden auto;
+
+    background: rgba($kColorBlack, .3);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.enter {
+    background: transparent;
+
+    > * {
+        opacity: 0;
+    }
+}
+.enterActive {
+    background: rgba($kColorBlack, .3);
+    transition: background 0.35s ease-in-out;
+
+    > * {
+        opacity: 1;
+        transition: opacity 0.35s ease-in-out;
+    }
+}
+.exit {
+    background: rgba($kColorBlack, .3);
+
+    > * {
+        opacity: 1;
+    }
+}
+.exitActive {
+    background: transparent;
+    transition: background 0.35s ease-in-out;
+
+    > * {
+        opacity: 0;
+        transition: opacity 0.35s ease-in-out;
+    }
+}

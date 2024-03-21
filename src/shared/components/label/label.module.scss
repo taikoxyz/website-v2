@@ -1,0 +1,15 @@
+.label {
+    padding: 9.5px 16px;
+    border-left: 2.5px solid $kColorPink;
+    background: linear-gradient(
+        90deg,
+        rgba(232, 24, 153, 0.15) 0%,
+        rgba(252, 157, 153, 0.15) 15.02%,
+        rgba(251, 236, 153, 0.15) 35.36%,
+        rgba(255, 255, 255, 0) 74.18%
+    );
+
+    font: 500 20px/1.255 $kFontClashGrotesk;
+    color: $kColorBlack;
+    letter-spacing: -.02em;
+}

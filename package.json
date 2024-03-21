@@ -1,0 +1,41 @@
+{
+  "name": "html",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3033",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@next/bundle-analyzer": "^14.1.0",
+    "@strapi/blocks-react-renderer": "^1.0.0",
+    "@tanstack/react-query": "^5.17.19",
+    "axios": "^1.5.0",
+    "clsx": "^2.0.0",
+    "dayjs": "^1.11.10",
+    "gsap": "^3.12.5",
+    "i18next": "^23.8.0",
+    "next": "14.1.0",
+    "next-i18next": "^15.2.0",
+    "qs": "^6.11.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-i18next": "^14.0.1",
+    "react-transition-group": "^4.4.5",
+    "sass": "^1.67.0",
+    "swiper": "^8.4.7",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/node": "^20",
+    "@types/qs": "^6.9.11",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-transition-group": "^4.4.10",
+    "typescript": "^5"
+  }
+}

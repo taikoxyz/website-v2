@@ -1,0 +1,75 @@
+.blogs {
+    display: flex;
+    flex-direction: column
+}
+
+.list {
+    @include grid(3, 24, 24);
+}
+
+.list_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog {
+    flex-grow: 1;
+}
+
+.countShow {
+    margin: 28px auto 0;
+    padding: 10px;
+    border-radius: 100px;
+    background: #EFEFEF;
+
+    font: 500 14px/1 $kFontPublicSans;
+    color: #444A55;
+}
+
+.viewMore {
+    margin: 38px auto 0;
+
+    [data-icon] {
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: $kLaptopXXL) {
+    .list {
+        @include grid(3, 12, 12);
+    }
+
+    .blog {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .list {
+        @include grid(2, 24, 24);
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .list {
+        @include grid(3, 24, 24);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .list {
+        @include grid(2, 24, 24);
+    }
+}
+
+@media screen and (max-width: $kTabletSM) {
+    .list {
+        @include grid(2, 12, 24);
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .list {
+        @include grid(1, 24, 24);
+    }
+}

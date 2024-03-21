@@ -1,0 +1,15 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 30px;
+
+    position: relative;
+
+    &_item {
+        cursor: pointer;
+
+        &:first-child {
+
+        }
+    }
+}

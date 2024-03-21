@@ -1,0 +1,29 @@
+.careers {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0 22px;
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    padding: 17px 0 100px;
+}
+
+@media screen and (max-width: $kTabletM) {
+    .gap {
+        padding-top: 8px;
+    }
+
+    .header {
+        padding: 0 8px;
+    }
+}

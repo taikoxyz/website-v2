@@ -1,0 +1,62 @@
+{
+    "hero": {
+        "ourSolutions": "Our solutions",
+        "title": "The most developer-friendly and <span>secure</span> Ethereum scaling solution",
+        "text": "Preserving Ethereum's essence, reducing costs, and pioneering native scaling with 'Based Contestable' and 'Based Booster' Rollups."
+    },
+    "platform": {
+        "suptitle": "Our platform",
+        "title": "Scaling natively, compose maximally",
+        "learnMore": "Learn more about Taiko",
+        "goTo": "Go to",
+        "items": [
+            {
+                "icon": "/img/solutions/icon-bridge.svg",
+                "title": "Bridge",
+                "text": "Taiko’s canonical bridge is the gateway to interacting with our ecosystem.",
+                "image": {
+                    "default": "/img/solutions/item-bridge.png",
+                    "webp": "/img/solutions/item-bridge.webp"
+                },
+                "url": "https://bridge.katla.taiko.xyz/"
+            }, {
+                "icon": "/img/solutions/icon-swap.svg",
+                "title": "Swap",
+                "text": "Swap tokens effortlessly on our native fork of Uniswap v3.",
+                "image": {
+                    "default": "/img/solutions/item-swap.png",
+                    "webp": "/img/solutions/item-swap.webp"
+                },
+                "url": "https://swap.katla.taiko.xyz/"
+            }, {
+                "icon": "/img/solutions/icon-explorer.svg",
+                "title": "Explorer",
+                "text": "Search and analyze contracts and transactions on the Taiko blockchain.",
+                "image": {
+                    "default": "/img/solutions/item-explorer.png",
+                    "webp": "/img/solutions/item-explorer.webp"
+                },
+                "url": "https://explorer.katla.taiko.xyz/"
+            }
+        ]
+    },
+    "infrastructure": {
+        "suptitle": "Our infrastructure",
+        "learnMore": "Learn more",
+        "items": [
+            {
+                "title": "Based Booster Rollups — scale natively, compose synchronously",
+                "icon": "/img/solutions/icon-rocket.svg",
+                "iconLottie": "/img/rocket.json",
+                "text": "BBRs merge based rollups and booster rollups, scaling Ethereum dapps without redeployment on all L2s. They delegate transaction sequencing to Ethereum block builders and shard transaction execution and storage. This approach minimizes developer effort, redeployment costs, and centralized sequencer risks, solving liquidity fragmentation while reducing concerns.",
+                "url": "https://taiko.mirror.xyz/anPjF35Mrc_xzYgOTbUmfjr_MlhE3L8ZBZIxqmz9GZ8"
+            }, {
+                "title": "Based Contestable Rollups — a modular, multi-proof design",
+                "icon": "/img/solutions/icon-laptop.svg",
+                "iconLottie": "/img/laptop.json",
+                "text": "Based Contestable Rollups (BCRs) unlock a new paradigm in Ethereum scaling. By combining the superpowers of Ethereum sequencing and integrating a contestation mechanism with a multi-proof design, BCRs maximally reduce transaction costs and increase decentralization.",
+                "url": "https://taiko.mirror.xyz/Z4I5ZhreGkyfdaL5I9P0Rj0DNX4zaWFmcws-0CVMJ2A"
+            }
+        ]
+    }
+}

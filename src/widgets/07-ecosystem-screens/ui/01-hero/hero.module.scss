@@ -1,0 +1,197 @@
+.wrapper {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    height: 655px;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    padding: 21px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.content_left {
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.content_right {
+    max-width: 310px;
+}
+
+.title {
+    font: 500 60px/0.9 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: #22282b;
+
+    max-width: 5em;
+
+    span {
+        color: $kColorPink;
+    }
+}
+
+.card {
+    padding: 27px 24px 24px;
+    border-radius: 30px;
+    background: rgba(#fff, 0.95);
+    backdrop-filter: blur(100px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card_suptitle {
+    font: 600 14px/1.2 $kFontPublicSans;
+    letter-spacing: 0.04em;
+    color: $kColorPink;
+
+    text-transform: uppercase;
+}
+
+.card_text {
+    margin-top: 20px;
+    font: 400 16px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.8);
+}
+
+.card_button {
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+.card_dapps {
+    margin-top: 36px;
+}
+
+.dapps {
+    margin-left: -21px;
+    margin-bottom: -21px;
+    background: $kColorThemeWhite;
+    border-radius: 0 30px 0 0;
+
+    padding: 18px 21px;
+    padding-right: 32px;
+
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        position: absolute;
+        border-radius: 0 0 0 30px;
+        box-shadow: -12px 12px 0 12px $kColorThemeWhite;
+    }
+
+    &::before {
+        left: 100%;
+        bottom: 0;
+    }
+
+    &::after {
+        bottom: 100%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: $kLaptopM) {
+    .image {
+        height: 580px;
+    }
+
+    .title {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .image {
+        height: 450px;
+    }
+
+    .content {
+        position: relative;
+        inset: auto;
+        padding: 0;
+        padding-top: 55px;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 28px;
+    }
+
+    .content_left,
+    .content_right {
+        max-width: 100%;
+    }
+
+    .title {
+        max-width: 550px;
+        text-align: center;
+    }
+
+    .card {
+        text-align: center;
+
+        max-width: 550px;
+        background: transparent;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_text {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .image {
+        height: 390px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .content {
+        padding-top: 32px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+}

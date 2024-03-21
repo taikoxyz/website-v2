@@ -1,0 +1,21 @@
+.gap {
+    padding: 70px 0 100px;
+}
+
+.sideLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .sideLayout {
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .gap {
+        padding: 35px 0 100px;
+    }
+}

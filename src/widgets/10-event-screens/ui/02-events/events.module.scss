@@ -1,0 +1,148 @@
+.wrapper {
+    display: flex;
+}
+
+.left {
+    width: 365px;
+    flex-shrink: 0;
+}
+
+.right {
+    width: calc(100% - 365px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    padding-left: 20px;
+
+    font: 500 40px/0.9 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: $kColorBlack;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    span {
+        font: inherit;
+        max-width: 5.5em;
+    }
+
+    svg {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        stroke: $kColorBlack;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.head_event {
+    flex-grow: 1;
+
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba($kColorBlack, 0.3);
+    text-transform: uppercase;
+}
+
+.head_420 {
+    width: 420px;
+
+    display: flex;
+}
+
+.head_column {
+    width: 50%;
+}
+
+.head_controls {
+    width: 90px;
+}
+
+@media screen and (max-width: $kLaptopXXL) {
+    .left {
+        width: 280px;
+    }
+
+    .right {
+        width: calc(100% - 280px);
+    }
+
+    .head_420 {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .wrapper {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .title {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 40px;
+        padding-left: 0;
+
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .head_420 {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .head_420 {
+        width: 100%;
+        gap: 20px;
+        max-width: 280px;
+        justify-content: space-between;
+    }
+
+    .head_column {
+        width: auto; 
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .title {
+        span {
+            font-size: 32px;
+        }
+
+        svg {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}

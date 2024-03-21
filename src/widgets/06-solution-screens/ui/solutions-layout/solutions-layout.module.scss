@@ -1,0 +1,21 @@
+.layout {
+    max-width: 1512px;
+    width: 100%;
+    padding: 0 18px;
+    margin: 0 auto;
+}
+
+.children {
+    padding-left: 155px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .children {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,134 @@
+.wrapper {
+    display: flex;
+}
+
+.left {
+    width: 350px;
+    padding-right: 25px;
+    flex-shrink: 0;
+}
+
+.right {
+    width: calc(100% - 350px);
+}
+
+.title {
+    font: 500 40px/.9 $kFontClashGrotesk;
+    letter-spacing: -.02em;
+    color: $kColorBlack;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+
+    span {
+        max-width: 220px;
+    }
+
+    svg {
+        width: 32px;
+        height: 32px;
+        stroke: $kColorBlack;
+    }
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    padding: 0 36px 30px;
+}
+
+.column_text {
+    font: 600 12px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .3);
+    text-transform: uppercase;
+}
+
+.column_grow {
+    flex-grow: 1;
+    padding-right: 20px;
+
+    .column_text {
+        margin-left: -36px;
+    }
+}
+
+.column_420 {
+    width: 40.8%;
+    flex-shrink: 0;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+
+    .column_item {
+        width: 50%;
+    }
+}
+
+.column_70 {
+    width: 70px;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .wrapper {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .title {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+
+    .left {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .head {
+        padding: 0 0 30px;
+    }
+    .column_420 {
+        width: 100%;
+        justify-content: space-between;
+
+        .column_item {
+            width: auto;
+
+            &:last-child {
+                min-width: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .title {
+        font-size: 32px;
+
+        span {
+            max-width: 180px;
+        }
+
+        svg {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@mixin fontCreate($name, $weight, $url, $ttf: true, $style: normal) {
+    @font-face {
+        font-family: $name;
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+        @if $ttf {
+            src: url('#{$url}.woff2') format('woff2'), url('#{$url}.woff') format('woff'),
+                url('#{$url}.ttf') format('truetype'),
+                url('#{$url}.eot') format('embedded-opentype');
+        } @else {
+            src: url('#{$url}.woff2') format('woff2'), url('#{$url}.woff') format('woff'),
+                url('#{$url}.otf') format('opentype'),
+                url('#{$url}.eot') format('embedded-opentype');
+        }
+    }
+}
+
+@mixin imgQuality {
+    image-rendering: -moz-crisp-edges; /* Firefox        */
+    image-rendering: -o-crisp-edges; /* Opera          */
+    image-rendering: -webkit-optimize-contrast; /* Safari         */
+    image-rendering: optimize-contrast; /* CSS3 Proposed  */
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+@mixin imgCover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+@mixin acceleration {
+    -webkit-transform: translateZ(0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+}
+
+@mixin textOverflowVertical($lines: 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin scaleLaptopToTabletSizes() {
+    @media (min-width: ($tablet + 1)) and (max-width: $laptop_big) {
+        @content;
+    }
+}
+
+@mixin textGradient($color) {
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@mixin strokeGradient($background: #fff, $stroke) {
+    border: 2px solid transparent;
+    background: $background, $stroke;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+@mixin mediaMinMax($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@function calcSize($size, $per) {
+    @return $size * calc($per / 100);
+}
+
+@function fullWidth($containerW: 1305px, $paddingW: 40px) {
+    @return calc(100% + (((100vw - 103px) - $containerW) / 2) + $paddingW);
+}
+
+@function calcTransition($duration: 1000ms, $function: linear, $delay: 0) {
+    @if ($delay == 0) {
+        @return $duration $function 0ms;
+    }
+    $dur: $duration * (1 - $delay / 1000);
+    $del: $duration * ($delay / 1000);
+
+    @return $dur $function $del;
+}
+
+@mixin gridCols($cols, $gap) {
+    flex: 0 0 calc(#{100% / $cols} - #{$gap * ($cols - 1) / $cols}px);
+    max-width: calc(#{100% / $cols} - #{$gap * ($cols - 1) / $cols}px);
+}
+
+@mixin grid($cols, $gapRow, $gapCol: $gapRow, $selector: li) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: #{$gapCol}px #{$gapRow}px;
+
+    > #{$selector} {
+        @include gridCols($cols, $gapRow);
+    }
+}

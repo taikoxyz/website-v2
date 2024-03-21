@@ -1,0 +1,157 @@
+.root {
+    position: relative;
+
+    &Attached {
+        .file_border {
+            stroke: $kColorPink;
+        }
+    }
+}
+
+.file {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.file_input {
+    width: 100%;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        stroke: #292d32;
+    }
+
+    span {
+        font: 400 16px/1.15 $kFontPublicSans;
+        letter-spacing: -0.01em;
+        color: #22282b;
+    }
+}
+
+.file_empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 23px;
+}
+
+.file_border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    stroke: rgba(#000, 0.25);
+}
+
+.file_fill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16.5px 20px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.file_left {
+    overflow: hidden;
+}
+
+.file_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.file_new {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    white-space: nowrap;
+
+    svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        stroke: $kColorPink;
+    }
+
+    span {
+        font: 600 13px/1.255 $kFontPublicSans;
+        letter-spacing: -0.02em;
+        color: $kColorPink;
+    }
+}
+
+.file_remove {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: #f1c7e1;
+        transition: fill 0.2s ease;
+    }
+
+    &:hover {
+        svg {
+            fill: $kColorPink;
+        }
+    }
+}
+
+.suptitle {
+    font: 400 10px/1.15 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: rgba(#16161a, 0.4);
+}
+
+.name {
+    margin-top: 6px;
+
+    font: 400 16px/1.24 $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: #16161a;
+
+    display: flex;
+    align-items: center;
+
+    span:first-child {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    span:last-child {
+        flex-shrink: 0;
+    }
+}
+
+
+@media screen and (max-width: $kMobileSM) {
+    .file_fill {
+        padding: 16.5px 14px;
+    }
+
+    .file_right,
+    .file_fill {
+        gap: 10px;
+    }
+
+    .file_remove {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.title {
+    font: 500 75px/.84 $kFontClashGrotesk;
+    color: #22282B;
+}
+
+.filterBtn {
+    font: 600 16px/1.2 $kFontPublicSans;
+    color: $kColorBlack;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    svg {
+        width: .875em;
+        height: .875em;
+        stroke: $kColorBlack;
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: $kLaptopXXL) {
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .header {
+        padding-left: 0;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .title {
+        font-size: 40px;
+    }
+}

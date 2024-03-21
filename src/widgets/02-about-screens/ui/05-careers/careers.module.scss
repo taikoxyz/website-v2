@@ -1,0 +1,178 @@
+.wrapper {
+    border-radius: 31px;
+    position: relative;
+    padding-right: 94px;
+}
+
+.image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    height: 100%;
+    object-position: right center;
+    border-radius: 0 31px 31px 0;
+}
+
+.box {
+    padding: 40px 32px 55px;
+    border-radius: 31px;
+    background: #FFF;
+
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    margin-top: 60px;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.content_left {
+    max-width: 600px;
+}
+
+.content_right {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content_suptitle {
+    font: 600 14px/1.2 $kFontPublicSans;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $kColorPink;
+}
+
+.content_title {
+    font: 500 44px/1 $kFontClashGrotesk;
+    letter-spacing: -0.02em;
+    color: $kColorBlack;
+
+    span {
+        color: $kColorPink;
+    }
+}
+
+.content_text {
+    font: 400 16px/1.255 $kFontPublicSans;
+    letter-spacing: -.01em;
+    color: rgba($kColorBlack, .8);
+
+    p {
+    }
+
+    p + p {
+        margin-top: 1.2em;
+    }
+}
+
+.content_button {
+    margin-top: 65px;
+}
+
+@media screen and (max-width: $kLaptopSM) {
+    .content_title {
+        font-size: 32px;
+    }
+
+    .content_left {
+        max-width: 450px;
+    }
+
+    .content_right {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: $kTabletXXL) {
+    .wrapper {
+        padding-right: 70px;
+    }
+
+    .content_right {
+        max-width: 310px;
+    }
+
+    .content_text {
+        font-size: 15px;
+    }
+
+    .content_button {
+        margin-top: 55px;
+    }
+}
+
+@media screen and (max-width: $kTabletM) {
+    .wrapper {
+        border-radius: 31px;
+        position: relative;
+        padding-right: 0;
+        padding-bottom: 43px;
+    }
+
+    .image {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        height: auto;
+        width: 100%;
+        border-radius: 0 0 31px 31px;
+    }
+
+    .content {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .content_left {
+        max-width: 460px;
+    }
+
+    .content_right {
+        max-width: 80%;
+    }
+
+    .content_text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .box {
+        padding: 40px 32px 45px;
+    }
+
+    .content_right {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: $kMobileSM) {
+    .box {
+        padding: 40px 24px;
+    }
+    
+    .content {
+        margin-top: 32px;
+    }
+
+    .content_right {
+        max-width: 100%;
+    }
+
+    .content_title {
+        font-size: 28px;
+    }
+
+    .content_text {
+        font-size: 15px;
+    }
+}

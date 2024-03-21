@@ -1,0 +1,1 @@
+export const getCareerURL = (slug: string) => `/careers/${slug}`;

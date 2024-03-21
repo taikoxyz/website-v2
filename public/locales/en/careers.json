@@ -1,0 +1,21 @@
+{
+    "hero": {
+        "title": "<span>Taiko’s</span> Careers",
+        "aboutBtn": "About Taiko"
+    },
+    "about": {
+        "suptitle": "About careers",
+        "title": "At Taiko Labs, it’s our goal to <span>unlock Ethereum</span> for the masses. We are developing the Taiko ZK-EVM: <a href=\"https://taiko.mirror.xyz/anPjF35Mrc_xzYgOTbUmfjr_MlhE3L8ZBZIxqmz9GZ8\" target=\"_blank\">a Based Contestable/Booster Rollup.</a>",
+        "text": "Our roles are remote, offer competitive compensation (cash + equity), and an opportunity to help scale Ethereum — a technology and ecosystem that is changing the world."
+    },
+    "positions": {
+        "title": "Open positions",
+        "position": "Position",
+        "location": "Location",
+        "type": "Type"
+    },
+    "banner": {
+        "title": "Don’t see what you’re looking for?",
+        "contactUs": "Contact us"
+    }
+}

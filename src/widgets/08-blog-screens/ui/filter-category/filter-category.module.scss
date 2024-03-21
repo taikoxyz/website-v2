@@ -1,0 +1,19 @@
+.content {
+    padding-top: 10px;
+}
+
+.item {
+    padding: 7px 10px;
+    border-radius: 8px;
+
+    font: 500 18px/1.255 $kFontClashGrotesk;
+    letter-spacing: -0.01em;
+    color: $kColorBlack;
+
+    cursor: pointer;
+
+    &Active {
+        background: #fff;
+        cursor: default;
+    }
+}

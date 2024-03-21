@@ -1,0 +1,28 @@
+.nav {
+}
+
+.nav_title {
+    font: 500 16px/1.4 $kFontPublicSans;
+    letter-spacing: -0.02em;
+    color: #909da2;
+}
+
+.nav_container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.nav_item {
+    font: 500 20px/1 $kFontClashGrotesk;
+    color: #22282b;
+}
+
+@media screen and (max-width: $kMobileXXL) {
+    .nav_container {
+        margin-top: 20px;
+        gap: 14px;
+    }
+}
