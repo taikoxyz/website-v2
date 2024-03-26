@@ -12,5 +12,5 @@ export interface IModalContext {
     openModal: <T = unknown>(name: string, payload?: T) => void;
     toggleModal: <T = unknown>(name: string, payload?: T) => void;
     closeModal: (name: string) => void;
-    // closeAllModals: () => void;
+    closeAllModals: () => void;
 }
