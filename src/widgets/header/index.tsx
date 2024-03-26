@@ -19,7 +19,7 @@ export const Header: React.FC<Props> = ({
     fixed
 }) => {
     const navigation = useTranslationObject<IHeaderLink[]>('navigation', 'header');
-    const socials = useTranslationObject<IHeaderSocial[]>('socials', 'header');
+    // const socials = useTranslationObject<IHeaderSocial[]>('socials', 'header');
     const [state,, { setStateValue }] = useApp();
 
     return (
@@ -59,7 +59,7 @@ export const Header: React.FC<Props> = ({
                                 </nav> 
 
                                 <div className={css.socials}>
-                                    {socials.map((social) => (
+                                    {/* {socials.map((social) => (
                                         <a
                                             className={css.socials_link}
                                             href={social.url}
@@ -70,7 +70,7 @@ export const Header: React.FC<Props> = ({
                                             {social.icon.split(':')[1]}
                                             <Sprite.Default icon={social.icon} />
                                         </a>
-                                    ))}
+                                    ))} */}
                                 </div>
                             </>
                         }

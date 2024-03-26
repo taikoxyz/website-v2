@@ -5,13 +5,13 @@ import { IFooterSocial } from 'widgets/footer/lib/types';
 import css from './footer-socials.module.scss';
 
 export const FooterSocials: React.FC = () => {
-    const socials = useTranslationObject<IFooterSocial[]>('socials', 'footer');
+    // const socials = useTranslationObject<IFooterSocial[]>('socials', 'footer');
 
     return (
         <div 
             className={css.socials}
         >
-            {socials.map((social) => (
+            {/* {socials.map((social) => (
                 <a 
                     className={css.socials_link}
                     href={social.url}
@@ -26,7 +26,7 @@ export const FooterSocials: React.FC = () => {
                         <span>{social.name}</span>
                     </div>
                 </a>
-            ))}
+            ))} */}
         </div>
     );
 }
