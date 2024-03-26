@@ -63,7 +63,7 @@ export const Blogs: React.FC = () => {
                             title={item.title}
                             timeToRead={item.timeToRead}
                             categoryName={item.category.name}
-                            imageSrc={fileServerPath(item.image.url)}
+                            imageSrc={item.image.url}
                             createdAt={item.createdAt}
                         />
                     </li>
