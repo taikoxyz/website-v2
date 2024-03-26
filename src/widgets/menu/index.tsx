@@ -4,15 +4,15 @@ import { CSSTransition } from 'react-transition-group';
 import { useApp } from 'app/providers/withApp';
 import { MediaQuery } from 'shared/ui/media-query';
 import { useTranslationObject } from 'shared/lib/hooks/use-translation-object';
-// import { IHeaderLink } from 'widgets/header/lib/types';
-// import { LinkDropdown } from 'shared/components/link-dropdown';
+import { IHeaderLink } from 'widgets/header/lib/types';
+import { LinkDropdown } from 'shared/components/link-dropdown';
 import Sprite from 'shared/ui/sprite';
 import { IFooterSocial } from 'widgets/footer/lib/types';
 import css from './menu.module.scss';
 
 export const Menu: React.FC = () => {
-    // const navigation = useTranslationObject<IHeaderLink[]>('navigation', 'header');
-    // const socials = useTranslationObject<IFooterSocial[]>('socials', 'footer');
+    const navigation = useTranslationObject<IHeaderLink[]>('navigation', 'header');
+    const socials = useTranslationObject<IFooterSocial[]>('socials', 'footer');
     const { t } = useTranslation('footer');
     const [{ menuActive }] = useApp();
 
@@ -42,14 +42,14 @@ export const Menu: React.FC = () => {
                             </h3>
 
                             <nav className={css.menu_nav}>
-                                {/* {navigation.map((link) => (
+                                {navigation.map((link) => (
                                     <LinkDropdown 
                                         name={link.name}
                                         links={link.links}
                                         key={link.name}
                                         solid
                                     />
-                                ))} */}
+                                ))}
                             </nav> 
 
                             <h3 
@@ -60,7 +60,7 @@ export const Menu: React.FC = () => {
                             />
 
                             <nav className={css.menu_socials}>
-                                {/* {socials.map((social) => (
+                                {socials.map((social) => (
                                     <a 
                                         className={css.menu_link}
                                         href={social.url}
@@ -72,7 +72,7 @@ export const Menu: React.FC = () => {
                                             ? <img src="/img/mirror-logo.png" alt="" />
                                             : <Sprite.Default icon={social.icon} />}
                                     </a>
-                                ))} */}
+                                ))}
                             </nav>
                         </div>
 
