@@ -9,5 +9,5 @@ export const ModalContext = createContext<IModalContext>({
     addToList: () => {},
     removeFromList: () => {},
     closeModal: () => {},  
-    closeAllModals: () => {}
+    // closeAllModals: () => {}
 });

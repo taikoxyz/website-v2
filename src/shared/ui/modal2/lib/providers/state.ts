@@ -51,9 +51,9 @@ export const useModalInitial = (): IModalContext => {
         }
     };
 
-    const closeAllModals = () => {
-        setModals((modals) => modals.map((modal) => ({ ...modal, active: false })));
-    };
+    // const closeAllModals = () => {
+    //     setModals((modals) => modals.map((modal) => ({ ...modal, active: false })));
+    // };
 
     return {
         modals,
@@ -63,6 +63,6 @@ export const useModalInitial = (): IModalContext => {
         openModal,
         closeModal,
         toggleModal,
-        closeAllModals,
+        // closeAllModals,
     };
 };
