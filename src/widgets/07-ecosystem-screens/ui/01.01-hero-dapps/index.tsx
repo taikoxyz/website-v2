@@ -18,7 +18,7 @@ export const HeroDapps: React.FC = () => {
             </div>
 
             <div className={css.content}>
-                <p className={css.title}>90+</p>
+                <p className={css.title}>100+</p>
                 <p className={css.text}>{t('dapps')}</p>
             </div>
         </div>
