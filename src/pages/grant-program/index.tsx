@@ -24,7 +24,7 @@ const GrantProgram: NextPage = () => {
                 <GrantScreens.Hero />
                 <GrantScreens.KeyDates />
                 <GrantScreens.Mission />
-                <GrantScreens.Community />
+                {/* <GrantScreens.Community /> */}
                 <GrantScreens.Tracks />
                 <GrantScreens.Support />
             </div>

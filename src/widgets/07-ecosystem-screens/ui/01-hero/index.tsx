@@ -67,14 +67,14 @@ export const Hero: React.FC = () => {
                         <div className={css.content_right}>
                             <div className={css.card}>
 
-                                <MediaQuery 
+                                {/* <MediaQuery 
                                     query="(min-width: 769px)"
                                     children={
                                         <h3 className={css.card_suptitle}>
                                             {t('suptitle')}
                                         </h3>
                                     }
-                                />
+                                /> */}
 
                                 <p className={css.card_text}>
                                     {t('text')}

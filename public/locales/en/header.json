@@ -5,7 +5,7 @@
             "suptitle": "Solution",
             "links": [
                 { 
-                    "name": "Solution", 
+                    "name": "Solutions", 
                     "url": "/solutions", 
                     "icon": "/img/icons/nav-solutions.svg",
                     "bold": true

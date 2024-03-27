@@ -2,7 +2,7 @@
     "copyright": "© 2024 Taiko Labs",
     "joinTaiko": "Join the taiko <b>community</b>",
     "content": {
-        "title": "Taiko Labs",
+        "title": "Taiko",
         "text": "The most developer-friendly and secure Ethereum scaling solution."
     },
     "subscribe": {
@@ -32,7 +32,7 @@
                     "name": "Get started",
                     "url": "https://docs.taiko.xyz/start-here/getting-started"
                 }, {
-                    "name": "Github",
+                    "name": "GitHub",
                     "url": "https://github.com/taikoxyz"
                 }
             ]

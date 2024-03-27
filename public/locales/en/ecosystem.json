@@ -10,9 +10,9 @@
     "lastUpdated": "Last updated on",
     "viewMore": "View more",
     "grant": {
-        "suptitle": "our grant program",
-        "text": "Our goal is to discover and support innovative projects and community members that advance the <span>Taiko ecosystem</span>",
+        "suptitle": "Taiko Grants",
+        "text": "Building on Taiko and need financial or other support? <span>Apply for a grant!</span>",
         "applyText": "Apply to our grants program",
-        "contactUs": "Contact us"
+        "contactUs": "Learn more"
     }
 }

@@ -33,8 +33,8 @@
         }, {
             "id": "aicon-community",
             "icon": "aicon:community",
-            "title": "community aligned",
-            "text": "Taiko is built with the support of our community and fully open-source. Meaning it's free to use and modify the source code with the permissive license.",
+            "title": "community-aligned",
+            "text": "We build with the support of our community and fully open-source. Meaning it's free to use and modify Taiko's source code with the permissive license.",
             "colors": {
                 "icon": "#E81899",
                 "text": "#0B101B",
@@ -43,7 +43,7 @@
         }, {
             "id": "aicon-security",
             "icon": "aicon:security",
-            "title": "security first",
+            "title": "security-first",
             "text": "Taiko demands no additional trust assumptions to Ethereum. As a based rollup with a permissionless (& decentralized) proposer/prover network from Day 1, Taiko inherits Ethereum's level of decentralization.",
             "colors": {
                 "icon": "#FFFFFF",
@@ -75,11 +75,11 @@
             }, {
                 "icon": "about:link",
                 "title": "Change RPC provider",
-                "text": "To configure your Ethereum tools to Taiko you’ll just need to point your favorite builder tools to a Taiko RPC Provider."
+                "text": "To configure your Ethereum tools to Taiko you'll just need to point your favorite builder tools to a Taiko RPC Provider."
             }, {
                 "icon": "about:settings",
                 "title": "Build with your usual developer tools",
-                "text": "Start building with your favorite toolkit."
+                "text": "Start building with your favorite developer toolkit."
             }
         ]
     },
@@ -106,7 +106,7 @@
     "ecosystem": {
         "title": "Explore \nour ecosystem",
         "text": "Become part of an accessible, open and inclusive ecosystem driven by a shared mission — nurturing Ethereum's Infinite Garden.",
-        "exploreButton": "Explore the Ecosystem",
+        "exploreButton": "Explore the ecosystem",
         "dapps": "DAPPS"
     }
 }

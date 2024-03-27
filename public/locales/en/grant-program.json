@@ -26,19 +26,19 @@
             {
                 "icon": "/img/grant/mission-icon-1.svg",
                 "title": "Discover and support innovative, talented, and value-aligned developers",
-                "text": "that build up and build on the Taiko ecosystem, with the financial incentives and resources needed to bring their visions to life"
+                "text": "Providing developers who build up and build on the Taiko ecosystem the financial incentives and resources needed to bring their products and services to life."
             }, {
                 "icon": "/img/grant/mission-icon-2.svg",
-                "title": "Enable and encourage developers to launch novel applications",
-                "text": "and infrastructure products that will draw new users to the Taiko ecosystem and assist in its long-term growth."
+                "title": "Enable and encourage developers to build",
+                "text": "Assisting developers in building novel applications or infrastructure products to draw new users to the Taiko ecosystem."
             }, {
                 "icon": "/img/grant/mission-icon-3.svg",
-                "title": "Help onboard established projects that everyone loves onto the Taiko ecosystem",
-                "text": "and help them attract new users through continuous support and by making them feel at home"
+                "title": "Help onboard established projects",
+                "text": "Bringing the projects that everyone loves to Taiko and helping them attract new users through continuous support."
             }, {
                 "icon": "/img/grant/mission-icon-4.svg",
                 "title": "Attract passionate community members",
-                "text": "who share Taiko's goals and the mission of the Taiko Grants program."
+                "text": "Finding active community members who share Taiko’s goals and involving them in the Taiko Grants program decision-making."
             }
         ]
     },
@@ -64,7 +64,7 @@
                 "icon": "/img/grant/track-icon-3.svg",
                 "title": "Request for Proposal (RFP)",
                 "track": "Track",
-                "text": "The RFP Track is aimed at experienced builders or teams who want to work on high-impact projects that are submitted by Taiko Labs. These will typically be specific requests for features or solutions that relate to the Taiko protocol or ecosystem. The Taiko team will submit such requests, as and when needed, and invite proposals from the community. <br/><br/>A list of our current RFPs can be found below and applications are open to anyone, including established teams and prior grantees.",
+                "text": "The RFP Track is aimed at experienced builders or teams who want to work on high-impact projects that are submitted by Taiko Labs. These will typically be specific requests for features or solutions that relate to the Taiko protocol or ecosystem. The Taiko team will submit such requests, as and when needed, and invite proposals from the community. <br/><br/>A list of our current RFPs can be found <u>here</u> and applications are open to anyone, including established teams and prior grantees.",
                 "timeline": "The RFPs Track is an <b>ongoing track that is going to stay open</b> beyond Cycle 2.",
                 "active": false
             }
@@ -72,7 +72,7 @@
     },
     "support": {
         "title": "Support and <span>FAQs</span>",
-        "text": "If you have any questions that you have yet to find answers to on the Taiko Grants HQ portal, join our <u>Discord</u> and head to the grants-support channel. Alternatively, you can also ask questions on the <u>Taiko community forum</u>.",
+        "text": "If you have any questions, join our <u>Discord</u> or ask in the <u>Taiko community forum</u>.",
         "faqs": [
             {
                 "q": "Are startups or new ventures eligible for grants?",
