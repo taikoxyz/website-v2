@@ -40,10 +40,6 @@
                     "url": "/blog", 
                     "icon": "/img/icons/nav-blog.svg" 
                 }, { 
-                    "name": "Events", 
-                    "url": "/events",
-                    "icon": "/img/icons/nav-events.svg" 
-                }, { 
                     "name": "Grants", 
                     "url": "/grant-program",
                     "icon": "/img/icons/nav-grants.svg" 
