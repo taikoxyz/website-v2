@@ -5,6 +5,7 @@ import { IBaseFields, IServerResponse } from "./global";
 export interface IBlog extends IBaseFields {
     title: string;
     slug: string;
+    link: string;
     timeToRead: string;
     category: IBlogCategory;
     image: IFileObject;
