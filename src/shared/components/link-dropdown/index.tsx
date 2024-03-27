@@ -66,7 +66,7 @@ export const LinkDropdown: React.FC<Props> = ({
                                     <a 
                                         className={css.dropdown_link}
                                         href={item.url}
-                                        target="_blank"
+                                        target={item.url.startsWith('/') ? '_self' : "_blank"}
                                     >
                                         {/* <Sprite.Default icon={item.icon} /> */}
                                         <div className={css.dropdown_svg}>
