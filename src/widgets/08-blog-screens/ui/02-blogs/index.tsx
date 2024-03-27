@@ -59,11 +59,11 @@ export const Blogs: React.FC = () => {
                     >
                         <BlogItem 
                             className={css.blog}
-                            url={`/blog/${item.slug}`}
+                            url={item.link}
                             title={item.title}
                             timeToRead={item.timeToRead}
                             categoryName={item.category.name}
-                            imageSrc={fileServerPath(item.image.url)}
+                            imageSrc={item.image.url}
                             createdAt={item.createdAt}
                         />
                     </li>

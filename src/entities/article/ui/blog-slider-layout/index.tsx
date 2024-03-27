@@ -77,7 +77,7 @@ export const BlogSliderLayout: React.FC<Props> = ({
                                     key={item.id}
                                 >
                                     <BlogItem 
-                                        imageSrc={fileServerPath(item.image.url)}
+                                        imageSrc={item.image.url}
                                         title={item.title}
                                         categoryName={item.category.name}
                                         timeToRead={item.timeToRead}
