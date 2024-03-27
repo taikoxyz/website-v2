@@ -84,7 +84,8 @@ export const Hero: React.FC = () => {
                                     className={css.card_button}
                                     text={t('joinOurEcosystem')}
                                     component="a"
-                                    href="/ecosystem"
+                                    target="_blank"
+                                    href="https://github.com/taikoxyz"
                                 />
 
                                 <MediaQuery 
