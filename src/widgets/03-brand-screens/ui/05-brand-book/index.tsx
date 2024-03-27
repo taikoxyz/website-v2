@@ -13,7 +13,11 @@ export const BrandBook: React.FC = () => {
                 icon="book"
                 text={t('brandBook.title')}
                 button={
-                    <Button text={t('brandBook.button')} />
+                    <Button 
+                        component="a"
+                        target="_blank"
+                        href='https://www.figma.com/file/qVALIk5srW9nvOJwl6NF6F/Taiko-Brand-Guidelines-(External)'
+                        text={t('brandBook.button')} />
                 }
             />
         </section>
