@@ -64,7 +64,7 @@ export const Blogs: React.FC = () => {
                             timeToRead={item.timeToRead}
                             categoryName={item.category.name}
                             imageSrc={item.image.url}
-                            createdAt={item.createdAt}
+                            createdAt={item.date}
                         />
                     </li>
                 ))}

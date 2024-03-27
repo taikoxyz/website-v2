@@ -81,7 +81,7 @@ export const BlogSliderLayout: React.FC<Props> = ({
                                         title={item.title}
                                         categoryName={item.category.name}
                                         timeToRead={item.timeToRead}
-                                        createdAt={item.createdAt}
+                                        createdAt={item.date}
                                         url={item.link}
                                         className={css.blog}
                                     />
