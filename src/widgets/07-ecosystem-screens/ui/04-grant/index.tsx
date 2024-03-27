@@ -37,7 +37,6 @@ export const Grant: React.FC = () => {
                                     text={t("grant.contactUs")}
                                     component="a"
                                     href="/grant-program"
-                                    target="_blank"
                                 /> 
                             }
                             fullwidth
