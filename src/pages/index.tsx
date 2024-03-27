@@ -27,7 +27,7 @@ function Home() {
                 complete && css.rootAnimated
             )}
             meta={{
-                description: t('hero.text'),
+                description: t('A based rollup.'),
             }}
             title="Home – Taiko"
         >
