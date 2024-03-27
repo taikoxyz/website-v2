@@ -82,7 +82,7 @@ export const BlogSliderLayout: React.FC<Props> = ({
                                         categoryName={item.category.name}
                                         timeToRead={item.timeToRead}
                                         createdAt={item.createdAt}
-                                        url={`/blog/${item.slug}`}
+                                        url={item.link}
                                         className={css.blog}
                                     />
                                 </SwiperSlide>
