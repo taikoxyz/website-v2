@@ -27,7 +27,10 @@ function Home() {
                 complete && css.rootAnimated
             )}
             meta={{
-                description: t('A based rollup.'),
+                title: t('Home - Taiko'),   
+                description: t('Taiko is a fully permissionless, Ethereum-equivalent based rollup. Inspired, secured, and sequenced by Ethereum.'),
+                image: "/img/og-image.png",
+                url: "https://taiko.xyz/"
             }}
             title="Home – Taiko"
         >
