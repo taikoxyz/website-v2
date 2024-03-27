@@ -14,6 +14,8 @@ export const Contact: React.FC = () => {
                     text={t('banner.title')}
                     button={
                         <Button 
+                            component="a"
+                            href='mailto:jobs@taiko.xyz'
                             text={t('banner.contactUs')}
                         />
                     }
