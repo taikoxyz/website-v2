@@ -24,7 +24,7 @@
                     "icon": "/img/icons/nav-docs.svg" 
                 }, { 
                     "name": "Explorer", 
-                    "url": "https://explorer.katla.taiko.xyz/",
+                    "url": "https://katla.taikoscan.network/",
                     "icon": "/img/icons/nav-explorer.svg" 
                 }
             ] 
