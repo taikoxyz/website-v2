@@ -11,6 +11,7 @@ export interface IGrantMission {
 
 export interface IGrantTrack {
     icon: string;
+    link: string;
     title: string;
     track: string;
     text: string;

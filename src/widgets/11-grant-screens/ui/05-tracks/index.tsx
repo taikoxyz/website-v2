@@ -47,6 +47,9 @@ export const Tracks: React.FC = () => {
                                         query="(min-width: 769px)"
                                         children={
                                             <Button 
+                                                component="a"
+                                                href={item.link}
+                                                target="_blank"
                                                 className={css.content_button}
                                                 text={t('track.applyNow')}
                                                 variant="pink-outlined"
@@ -85,6 +88,10 @@ export const Tracks: React.FC = () => {
                                 query="(max-width: 768px)"
                                 children={
                                     <Button 
+                                        component="a"
+                                        href={item.link}
+                                        data-class="blog"
+                                        target="_blank"
                                         className={css.content_button}
                                         text={t('track.applyNow')}
                                         variant="pink-outlined"

@@ -27,7 +27,7 @@ const Careers: NextPage = () => {
             </div>
             <div className={css.gap}>
                 <CareersScreens.Hero />
-                <CareersScreens.About />
+                {/* <CareersScreens.About /> */}
                 <CareersScreens.Positions />
                 <CareersScreens.Contact />
             </div>
