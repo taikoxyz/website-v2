@@ -32,6 +32,7 @@ export const BlogItem: React.FC<Props> = ({
             className={clsx(css.root, className)}
             href={url!}
             data-class="blog"
+            target="_blank"
         >
             <div className={css.image}>
                 <Image 

@@ -59,7 +59,7 @@ export const Blogs: React.FC = () => {
                     >
                         <BlogItem 
                             className={css.blog}
-                            url={`/blog/${item.id}`}
+                            url={item.link}
                             title={item.title}
                             timeToRead={item.timeToRead}
                             categoryName={item.category.name}
