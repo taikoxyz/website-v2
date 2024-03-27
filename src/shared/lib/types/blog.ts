@@ -6,6 +6,7 @@ export interface IBlog extends IBaseFields {
     title: string;
     slug: string;
     link: string;
+    date: string;
     timeToRead: string;
     category: IBlogCategory;
     image: IFileObject;
