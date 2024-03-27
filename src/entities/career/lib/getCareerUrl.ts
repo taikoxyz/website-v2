@@ -1,1 +1,1 @@
-export const getCareerURL = (slug: string) => `/careers/${slug}`;
+export const getCareerURL = (slug: number) => `/careers/${slug}`;

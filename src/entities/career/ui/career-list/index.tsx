@@ -23,7 +23,7 @@ export const CareerList: React.FC<Props> = ({
                             title={item.title} 
                             location={item.location}
                             type={item.type}
-                            url={getCareerURL(item.slug)}
+                            url={getCareerURL(item.id)}
                         />
                     </li>
                 ))}
