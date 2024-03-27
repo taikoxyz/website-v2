@@ -33,7 +33,11 @@ export const Grant: React.FC = () => {
                             icon="star"
                             text={t('grant.applyText')}
                             button={
-                                <Button text={t('grant.contactUs')} />
+                                <Button
+                                    text={t("grant.contactUs")}
+                                    component="a"
+                                    href="/grant-program"
+                                /> 
                             }
                             fullwidth
                         />
