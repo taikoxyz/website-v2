@@ -14,7 +14,7 @@ export const ProjectsList: React.FC<Props> = React.memo(({ projects }) => {
             {projects.map((project) => (
                 <li className={css.list_item} key={project.id}>
                     <ProjectItem
-                        iconSrc={fileServerPath(project.icon.url)}
+                        iconSrc={project.icon.url}
                         url={project.link}
                         title={project.name}
                         text={project.description}
