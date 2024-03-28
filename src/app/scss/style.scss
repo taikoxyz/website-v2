@@ -32,6 +32,10 @@ body {
     width: 100%;
     padding: 0 $kPadding;
     margin-inline: auto;
+
+    @media screen and (min-width: 1550px) {
+        width: 80%;
+    }
 }
 
 .img-cover {
