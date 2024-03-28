@@ -29,11 +29,11 @@ export const Hero: React.FC = () => {
                             {position.title}
                         </h1>
 
-                        <Button 
+                        {/* <Button 
                             onClick={() => openModal(PositionModalEnum.APPLY_POS, position)}
                             text={t('applyNow')}
                             className={css.button}
-                        />
+                        /> */}
                     </div>
 
                 </div>
