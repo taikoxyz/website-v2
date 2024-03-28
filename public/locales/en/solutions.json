@@ -45,17 +45,17 @@
         "learnMore": "Learn more",
         "items": [
             {
-                "title": "Based Booster Rollups — scale natively, compose synchronously",
-                "icon": "/img/solutions/icon-rocket.svg",
-                "iconLottie": "/img/rocket.json",
-                "text": "BBRs merge based rollups and booster rollups, scaling Ethereum dapps without redeployment on all L2s. By sharding transaction execution and storage, BBRs minimize developer effort and redeployment costs, thereby solving liquidity fragmentation across L2s.",
-                "url": "https://taiko.mirror.xyz/anPjF35Mrc_xzYgOTbUmfjr_MlhE3L8ZBZIxqmz9GZ8"
-            }, {
                 "title": "Based Contestable Rollups — a modular, multi-proof design",
                 "icon": "/img/solutions/icon-laptop.svg",
                 "iconLottie": "/img/laptop.json",
                 "text": "BCRs unlock a new paradigm in Ethereum scaling. By combining the superpowers of Ethereum sequencing and integrating a contestation mechanism with a multi-proof design, BCRs maximally reduce transaction costs and increase decentralization.",
                 "url": "https://taiko.mirror.xyz/Z4I5ZhreGkyfdaL5I9P0Rj0DNX4zaWFmcws-0CVMJ2A"
+            }, {
+                "title": "Based Booster Rollups — scale natively, compose synchronously",
+                "icon": "/img/solutions/icon-rocket.svg",
+                "iconLottie": "/img/rocket.json",
+                "text": "BBRs merge based rollups and booster rollups, scaling Ethereum dapps without redeployment on all L2s. By sharding transaction execution and storage, BBRs minimize developer effort and redeployment costs, thereby solving liquidity fragmentation across L2s.",
+                "url": "https://taiko.mirror.xyz/anPjF35Mrc_xzYgOTbUmfjr_MlhE3L8ZBZIxqmz9GZ8"
             }
         ]
     }
