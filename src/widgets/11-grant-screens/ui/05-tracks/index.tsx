@@ -43,7 +43,7 @@ export const Tracks: React.FC = () => {
                                         </p>
                                     </div>
 
-                                    <MediaQuery 
+                                    {item.active && <MediaQuery 
                                         query="(min-width: 769px)"
                                         children={
                                             <Button 
@@ -55,7 +55,7 @@ export const Tracks: React.FC = () => {
                                                 variant="pink-outlined"
                                             />
                                         }
-                                    />
+                                    />}
                                 </div>
 
                                 <p 

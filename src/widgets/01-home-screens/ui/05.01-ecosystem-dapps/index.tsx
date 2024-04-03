@@ -15,7 +15,7 @@ const EcosystemDapps: React.FC= () => {
             let current = { var: +(spanRef.current.textContent || 0) };
 
             gsap.to(current, 2, {
-                var: 90,
+                var: 100,
                 onUpdate: function() {
                     spanRef.current!.innerHTML = `${Math.ceil(current.var)}`;
                 }

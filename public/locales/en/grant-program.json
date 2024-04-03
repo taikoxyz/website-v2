@@ -53,13 +53,22 @@
         "applyNow": "Apply now",
         "items": [
             {
+                "icon": "/img/grant/track-icon-1.svg",
+                "title": "Community",
+                "track": "Track",
+                "link": "https://app.charmverse.io/taiko/partner-track-9459862254384057",
+                "text": "The Community Track is aimed at established and mature projects or service providers. This track is suitable for projects that are already live, have some active users, and a sizeable community. <br/><br/> The track could also be suitable for a crypto service provider that is looking to integrate, support, or deploy on Taikoand would like to make a grant application. The goal is to onboard the projects/service providers everyone knows and loves to Taiko and make them feel at home.",
+                "timeline": "The Community Track is <b>Closed</b>",
+                "active": false
+            }, 
+            {
                 "icon": "/img/grant/track-icon-2.svg",
                 "title": "Partner",
                 "track": "Track",
                 "link": "https://app.charmverse.io/taiko/partner-track-9459862254384057",
-                "text": "The Partner Track is aimed at established and mature projects or service providers. This track is suitable for projects that are already live, have some active users, and a sizeable community. <br/><br/> The track could also be suitable for a crypto service provider that is looking to integrate, support, or deploy on Taikoand would like to make a grant application. The goal is to onboard the projects/service providers everyone knows and loves to Taiko and make them feel at home.",
-                "timeline": "The Partner Track is an <b>ongoing track that is going to stay open</b> beyond Cycle 2.",
-                "active": false
+                "text": "The Partner Track is aimed at established and mature projects or service providers. This track is suitable for projects that are already live, have some active users, and a sizeable community. <br/><br/> The track could also be suitable for a crypto service provider that is looking to integrate, support, or deploy on Taiko and would like to make a grant application. The goal is to onboard the projects/service providers everyone knows and loves to Taiko and make them feel at home.",
+                "timeline": "The Partner Track is <b>Open</b>",
+                "active": true
             }, 
             {
                 "icon": "/img/grant/track-icon-3.svg",
@@ -67,8 +76,8 @@
                 "track": "Track",
                 "link": "https://app.charmverse.io/taiko/request-for-proposal-rfp-track-8186138497093947",
                 "text": "The RFP Track is aimed at experienced builders or teams who want to work on high-impact projects that are submitted by Taiko Labs. These will typically be specific requests for features or solutions that relate to the Taiko protocol or ecosystem. The Taiko team will submit such requests, as and when needed, and invite proposals from the community. <br/><br/>A list of our current RFPs can be found <u>here</u> and applications are open to anyone, including established teams and prior grantees.",
-                "timeline": "The RFPs Track is an <b>ongoing track that is going to stay open</b> beyond Cycle 2.",
-                "active": false
+                "timeline": "The RFPs Track is <b>Open</b>",
+                "active": true
             }
         ]
     },
