@@ -16,7 +16,7 @@
                 "text": "Taiko’s canonical bridge is the gateway to interacting with our ecosystem.",
                 "image": {
                     "default": "/img/solutions/item-bridge.png",
-                    "webp": "/img/solutions/item-bridge.webp"
+                    "webp": "/img/solutions/item-bridge.png"
                 },
                 "url": "https://bridge.katla.taiko.xyz/"
             }, {
@@ -25,7 +25,7 @@
                 "text": "Swap tokens effortlessly on our native fork of Uniswap v3.",
                 "image": {
                     "default": "/img/solutions/item-swap.png",
-                    "webp": "/img/solutions/item-swap.webp"
+                    "webp": "/img/solutions/item-swap.png"
                 },
                 "url": "https://swap.katla.taiko.xyz/"
             }, {
@@ -34,7 +34,7 @@
                 "text": "Search and analyze contracts and transactions on the Taiko blockchain.",
                 "image": {
                     "default": "/img/solutions/item-explorer.png",
-                    "webp": "/img/solutions/item-explorer.webp"
+                    "webp": "/img/solutions/item-explorer.png"
                 },
                 "url": "https://katla.taikoscan.network/"
             }
