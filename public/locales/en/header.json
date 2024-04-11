@@ -12,11 +12,11 @@
                 },
                 { 
                     "name": "Bridge", 
-                    "url": "https://bridge.katla.taiko.xyz/", 
+                    "url": "https://bridge.hekla.taiko.xyz/", 
                     "icon": "/img/icons/nav-bridge.svg" 
                 }, { 
                     "name": "Swap", 
-                    "url": "https://swap.katla.taiko.xyz/", 
+                    "url": "https://swap.hekla.taiko.xyz/", 
                     "icon": "/img/icons/nav-swap.svg" 
                 }, { 
                     "name": "Documentation", 
@@ -24,7 +24,7 @@
                     "icon": "/img/icons/nav-docs.svg" 
                 }, { 
                     "name": "Explorer", 
-                    "url": "https://katla.taikoscan.network/",
+                    "url": "https://explorer.hekla.taiko.xyz/",
                     "icon": "/img/icons/nav-explorer.svg" 
                 }
             ] 

@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
                                             text={t('hero.bridgeToTaiko')}
                                             animated={{ offset: 0 }}
                                             variant="pink-outlined"
-                                            href="https://bridge.katla.taiko.xyz/"
+                                            href="https://bridge.hekla.taiko.xyz/"
                                             target="_blank"
                                             component="a"
                                             noArrow

@@ -18,7 +18,7 @@
                     "default": "/img/solutions/item-bridge.png",
                     "webp": "/img/solutions/item-bridge.png"
                 },
-                "url": "https://bridge.katla.taiko.xyz/"
+                "url": "https://bridge.hekla.taiko.xyz/"
             }, {
                 "icon": "/img/solutions/icon-swap.svg",
                 "title": "Swap",
@@ -27,7 +27,7 @@
                     "default": "/img/solutions/item-swap.png",
                     "webp": "/img/solutions/item-swap.png"
                 },
-                "url": "https://swap.katla.taiko.xyz/"
+                "url": "https://swap.hekla.taiko.xyz/"
             }, {
                 "icon": "/img/solutions/icon-explorer.svg",
                 "title": "Explorer",
@@ -36,7 +36,7 @@
                     "default": "/img/solutions/item-explorer.png",
                     "webp": "/img/solutions/item-explorer.png"
                 },
-                "url": "https://katla.taikoscan.network/"
+                "url": "https://explorer.hekla.taiko.xyz/"
             }
         ]
     },
