@@ -24,7 +24,7 @@
                     "icon": "/img/icons/nav-docs.svg" 
                 }, { 
                     "name": "Explorer", 
-                    "url": "https://explorer.hekla.taiko.xyz/",
+                    "url": "https://hekla.taikoscan.network/",
                     "icon": "/img/icons/nav-explorer.svg" 
                 }
             ] 
