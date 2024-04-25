@@ -41,16 +41,16 @@
             "list": [
                 {
                     "name": "Bridge",
-                    "url": "https://bridge.katla.taiko.xyz/"
+                    "url": "https://bridge.hekla.taiko.xyz/"
                 }, {
                     "name": "Swap",
-                    "url": "https://swap.katla.taiko.xyz/"
+                    "url": "https://swap.hekla.taiko.xyz/"
                 }, {
                     "name": "Documentation",
                     "url": "https://docs.taiko.xyz/"
                 }, {
                     "name": "Explorer",
-                    "url": "https://katla.taikoscan.network/"
+                    "url": "https://hekla.taikoscan.network/"
                 }
             ]
         }
