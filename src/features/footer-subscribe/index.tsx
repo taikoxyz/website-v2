@@ -24,61 +24,62 @@ export const FooterSubscribe: React.FC = () => {
     });
 
     return (
-        <></>
-        // <div className={css.root}>
-        //     <Icon className={css.icon} icon="notification" />
+        <>
+        <div className={css.root}>
+            <Icon className={css.icon} icon="notification" />
 
-        //     <p className={css.title}>
-        //         {t('subscribe.stayUpdated')
-        //             .split('\n')
-        //             .map((text) => (
-        //                 <span>{text}</span>
-        //             ))}
-        //     </p>
+            <p className={css.title}>
+                {t('subscribe.stayUpdated')
+                    .split('\n')
+                    .map((text) => (
+                        <span>{text}</span>
+                    ))}
+            </p>
 
-        //    <div className={css.box}>
+           <div className={css.box}>
 
-        //         <form 
-        //             className={`${css.form} aos`} 
-        //             onSubmit={handleSubmit} 
-        //             data-aos-offset="210px"
-        //         >
-        //             <div className={css.container}>
-        //                 <Input
-        //                     value={values.email}
-        //                     onChange={handleChange}
-        //                     className={{
-        //                         root: css.input,
-        //                         field: css.input_field,
-        //                         input: css.input_input,
-        //                     }}
-        //                     placeholder={t('subscribe.email')}
-        //                     name="email"
-        //                 />
+                <form 
+                    className={`${css.form} aos`} 
+                    onSubmit={handleSubmit} 
+                    data-aos-offset="210px"
+                >
+                    <div className={css.container}>
+                        <Input
+                            value={values.email}
+                            onChange={handleChange}
+                            className={{
+                                root: css.input,
+                                field: css.input_field,
+                                input: css.input_input,
+                            }}
+                            placeholder={t('subscribe.email')}
+                            name="email"
+                        />
 
-        //                 <MediaQuery 
-        //                     query="(min-width: 657px)"
-        //                     children={
-        //                         <Button 
-        //                             className={css.button} 
-        //                             text={t('subscribe.subscribe')} 
-        //                             animated={{ offset: '200px' }}
-        //                         />
-        //                     }
-        //                 />
+                        <MediaQuery 
+                            query="(min-width: 657px)"
+                            children={
+                                <Button 
+                                    className={css.button} 
+                                    text={t('subscribe.subscribe')} 
+                                    animated={{ offset: '200px' }}
+                                />
+                            }
+                        />
 
-        //                 <MediaQuery 
-        //                     query="(max-width: 656px)"
-        //                     children={
-        //                         <Button 
-        //                             className={css.button} 
-        //                             text={t('subscribe.subscribe')} 
-        //                         />
-        //                     }
-        //                 />
-        //             </div>
-        //         </form>
-        //    </div>
-        // </div>
+                        <MediaQuery 
+                            query="(max-width: 656px)"
+                            children={
+                                <Button 
+                                    className={css.button} 
+                                    text={t('subscribe.subscribe')} 
+                                />
+                            }
+                        />
+                    </div>
+                </form>
+           </div>
+        </div>
+        </>
     );
 };

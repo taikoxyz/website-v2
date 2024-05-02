@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
-import { FooterSubscribe } from 'features/footer-subscribe';
+// import { FooterSubscribe } from 'features/footer-subscribe';
 import css from './footer.module.scss';
 import { FooterNav, FooterSocials } from './ui';
 
@@ -17,7 +17,7 @@ export const Footer: React.FC<Props> = ({
         <div className={css.footer}>
             <div className="container">
                 <div className={css.wrapper}>
-                    {subscribeBar && <FooterSubscribe />}
+                    {subscribeBar}
 
                     <div className={css.box}>
                         <p 
