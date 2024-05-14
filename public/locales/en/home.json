@@ -85,21 +85,20 @@
     },
     "solutions": {
         "solutions": "Our solutions",
-        "list": [
-            {
-                "title": "<strong>Based Booster Rollups</strong> — scale natively, compose synchronously",
-                "extraTitle": "scale natively, compose synchronously",
-                "title_short": "Based Booster Rollup",
-                "text": "Deploy on Ethereum and scale natively across all L2s.",
-                "icon": "rocket",
-                "iconLottie": "/img/rocket.json"
-            }, {
+        "list": [ {
                 "title": "<strong>Based Contestable Rollups</strong> — a modular, multi-proof design",
                 "extraTitle": "a modular, multi-proof design",
                 "title_short": "Based Contestable Rollup",
                 "text": "Combining the best of optimistic and ZK-rollups to maximally reduce costs and increase decentralization.",
                 "icon": "laptop",
                 "iconLottie": "/img/laptop.json"
+            },{
+                "title": "<strong>Based Booster Rollups</strong> — scale natively, compose synchronously",
+                "extraTitle": "scale natively, compose synchronously",
+                "title_short": "Based Booster Rollup",
+                "text": "Deploy on Ethereum and scale natively across all L2s.",
+                "icon": "rocket",
+                "iconLottie": "/img/rocket.json"
             }
         ]
     },
