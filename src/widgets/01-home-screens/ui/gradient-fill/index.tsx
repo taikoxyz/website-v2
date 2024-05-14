@@ -28,7 +28,7 @@ const FillCircle: React.FC<IHomeAdvantage> = ({
                 colors.background
             );
 
-            // return () => instance.current?.destroy();
+            return () => instance.current?.destroy();
         }
     });
 
