@@ -32,7 +32,7 @@ const StickyContent: React.FC<Props> = ({ children, stickyEl }) => {
 
     return (
         <div className={css.root}>
-            <div className={css.sticky} ref={stickyRef}>
+            <div className={css.pad} ref={stickyRef}>
                 {stickyEl}
             </div>
             <div className={css.children}>
