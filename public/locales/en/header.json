@@ -19,18 +19,17 @@
                     "url": "https://docs.taiko.xyz/start-here/getting-started",
                     "icon": "/img/icons/nav-docs.svg" 
                 }, { 
-                    "name": "Explorer", 
-                    "url": "/",
-                    "icon": "/img/icons/nav-explorer.svg" 
-                },  { 
-                    "name": "taikoscan.io (by Etherscan)", 
-                    "url": "https://taikoscan.io/"
-                }, { 
                     "name": "taikoscan.network (by Routescan)", 
-                    "url": "https://taikoscan.network/"
+                    "url": "https://taikoscan.network/",
+                    "icon": "/img/icons/nav-explorer.svg" 
+                }, { 
+                    "name": "taikoscan.io (by Etherscan)", 
+                    "url": "https://taikoscan.io/",
+                    "icon": "/img/icons/nav-explorer.svg" 
                 }, { 
                     "name": "taikoscan.net (by Socialscan)", 
-                    "url": "https://taikoscan.net/"
+                    "url": "https://taikoscan.net/",
+                    "icon": "/img/icons/nav-explorer.svg" 
                 }
             ] 
         }, { 
