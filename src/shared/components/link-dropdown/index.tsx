@@ -63,7 +63,17 @@ export const LinkDropdown: React.FC<Props> = ({
                                     className={css.dropdown_item}
                                     key={item.url}
                                 >
-                                    <a 
+                                    {item.url === '/' ? <a 
+                                        className={css.dropdown_no_link}
+                                    >
+                                        {/* <Sprite.Default icon={item.icon} /> */}
+                                        <div className={css.dropdown_svg}>
+                                            <img src={item.icon} alt="" />
+                                        </div>
+                                        <span style={{ fontWeight: item.bold ? '600' : '' }}>
+                                            {item.name}
+                                        </span>
+                                    </a> : <a 
                                         className={css.dropdown_link}
                                         href={item.url}
                                         target={item.url.startsWith('/') ? '_self' : "_blank"}
@@ -76,7 +86,7 @@ export const LinkDropdown: React.FC<Props> = ({
                                             {item.name}
                                             {item.url.startsWith('/') ? '' : <>&nbsp;&nbsp;↗</>}
                                         </span>
-                                    </a>
+                                    </a>}
                                </li>
                             ))}
                         </div>
