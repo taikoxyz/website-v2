@@ -23,7 +23,7 @@
                     "url": "https://docs.taiko.xyz/start-here/getting-started",
                     "icon": "/img/icons/nav-docs.svg" 
                 }, { 
-                    "name": "Etherscan", 
+                    "name": "TaikoScan", 
                     "url": "https://taikoscan.io/",
                     "icon": "/img/icons/nav-explorer.svg" 
                 }, { 
