@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import gsap from "gsap"
+import gsap from "gsap";
 import { useTranslation } from 'next-i18next';
 import { useAos } from 'shared/lib/hooks/use-aos';
 import css from './ecosystem-dapps.module.scss';
