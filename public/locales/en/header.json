@@ -7,8 +7,7 @@
                 { 
                     "name": "Solutions", 
                     "url": "/solutions", 
-                    "icon": "/img/icons/nav-solutions.svg",
-                    "bold": true
+                    "icon": "/img/icons/nav-solutions.svg"
                 },
                 { 
                     "name": "Bridge", 
