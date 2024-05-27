@@ -23,8 +23,16 @@
                     "url": "https://docs.taiko.xyz/start-here/getting-started",
                     "icon": "/img/icons/nav-docs.svg" 
                 }, { 
-                    "name": "Explorer", 
-                    "url": "https://hekla.taikoscan.network/",
+                    "name": "Etherscan", 
+                    "url": "https://taikoscan.io/",
+                    "icon": "/img/icons/nav-explorer.svg" 
+                }, { 
+                    "name": "Router Scan", 
+                    "url": "https://taikoscan.network/",
+                    "icon": "/img/icons/nav-explorer.svg" 
+                }, { 
+                    "name": "SocialScan", 
+                    "url": "https://taikoscan.net/",
                     "icon": "/img/icons/nav-explorer.svg" 
                 }
             ] 
@@ -35,6 +43,10 @@
                     "name": "Ecosystem", 
                     "url": "/ecosystem", 
                     "icon": "/img/icons/nav-ecosystem.svg" 
+                }, { 
+                    "name": "Trailblazer", 
+                    "url": "/ecosystem", 
+                    "icon": "/img/icons/nav-trailblazer.svg" 
                 }, { 
                     "name": "Blog", 
                     "url": "/blog", 
