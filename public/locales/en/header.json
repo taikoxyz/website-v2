@@ -44,7 +44,7 @@
                     "icon": "/img/icons/nav-ecosystem.svg" 
                 }, { 
                     "name": "Trailblazer", 
-                    "url": "/ecosystem", 
+                    "url": "https://trailblazers.taiko.xyz/", 
                     "icon": "/img/icons/nav-trailblazer.svg" 
                 }, { 
                     "name": "Blog", 
