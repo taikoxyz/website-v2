@@ -12,12 +12,8 @@
                 },
                 { 
                     "name": "Bridge", 
-                    "url": "https://bridge.hekla.taiko.xyz/", 
+                    "url": "https://bridge.taiko.xyz/", 
                     "icon": "/img/icons/nav-bridge.svg" 
-                }, { 
-                    "name": "Swap", 
-                    "url": "https://swap.hekla.taiko.xyz/", 
-                    "icon": "/img/icons/nav-swap.svg" 
                 }, { 
                     "name": "Documentation", 
                     "url": "https://docs.taiko.xyz/start-here/getting-started",
@@ -27,7 +23,7 @@
                     "url": "https://taikoscan.io/",
                     "icon": "/img/icons/nav-explorer.svg" 
                 }, { 
-                    "name": "Router Scan", 
+                    "name": "Route Scan", 
                     "url": "https://taikoscan.network/",
                     "icon": "/img/icons/nav-explorer.svg" 
                 }, { 
