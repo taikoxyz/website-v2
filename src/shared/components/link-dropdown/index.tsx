@@ -12,6 +12,7 @@ interface Props {
         name: string;
         url: string;
         bold?: boolean;
+        subtitle?: string;
     }[];
     solid?: boolean;
 }
@@ -82,10 +83,15 @@ export const LinkDropdown: React.FC<Props> = ({
                                         <div className={css.dropdown_svg}>
                                             <img src={item.icon} alt="" />
                                         </div>
-                                        <span style={{ fontWeight: item.bold ? '600' : '' }}>
-                                            {item.name}
-                                            {item.url.startsWith('/') ? '' : <>&nbsp;&nbsp;↗</>}
-                                        </span>
+                                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                                            <span style={{ fontWeight: item.bold ? '600' : '' }}>
+                                                {item.name}
+                                                {item.url.startsWith('/') ? '' : <>&nbsp;&nbsp;↗</>}
+                                            </span>
+                                            {item.subtitle && <span style={{ fontWeight: '400', fontSize: '12px', color: '#444A55' }}>
+                                                {item.subtitle}
+                                            </span>}
+                                        </div>
                                     </a>}
                                </li>
                             ))}
