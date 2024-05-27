@@ -123,6 +123,29 @@
         color: $kColorPink;
     }
 }
+.dropdown_no_link {
+    padding: 6px 0;
+
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 12px;
+
+    white-space: nowrap;
+
+    img {
+        width: 100%;
+    }
+
+    span {
+        font: 400 16px/1.255 $kFontPublicSans;
+        letter-spacing: -0.02em;
+        color: rgba(#000, 0.95);
+
+        transition: color 0.3s ease;
+    }
+
+}
 .dropdown_svg {
     width: 18px;
     height: 18px;
