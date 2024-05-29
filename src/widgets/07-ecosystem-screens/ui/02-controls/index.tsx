@@ -48,24 +48,29 @@ export const Controls: React.FC= () => {
         }
     }, [isTyping, value]);
 
+    // Set the default filter to 'Mainnet' on the initial render
+    useEffect(() => {
+        setFilter('type', 'Mainnet');
+    }, []);
+
     const renderCategories = useMemo(() => {
         return [{ name: "All Categories", value: ALL }].concat(categories
             .filter((item) => (item.projects?.count || 0) > 0)
             .map(({ name }) => ({ name, value: name })))
     }, [categories]);
-    
+
     return (
         <section className={css.controls}>
             <div className="container">
                 <div className={css.wrapper}>
-                    <Input 
+                    <Input
                         className={{
                             root: css.search,
                             field: css.search_field,
                             input: css.search_input
                         }}
                         controls={
-                            <Sprite.Default 
+                            <Sprite.Default
                                 className={css.search_icon}
                                 icon="magnifier"
                             />
@@ -76,22 +81,22 @@ export const Controls: React.FC= () => {
                     />
 
                     <div className={css.selects}>
-                        <TaikoSelect 
+                        <TaikoSelect
                             value={
-                                filters.type 
+                                filters.type
                                     ? { name: filters.type, value: filters.type }
-                                    : types[0]
+                                    : types[1] // Set 'Mainnet' as the default selected option
                             }
                             onChange={(data) => setFilter(
                                 'type',
-                                data?.value === ALL 
+                                data?.value === ALL
                                     ? null
                                     : data?.name || null
                             )}
                             options={types}
                             variant="select"
                         />
-                        <TaikoSelect 
+                        <TaikoSelect
                             value={
                                 filters.category
                                     ? { name: filters.category, value: filters.category }
@@ -99,7 +104,7 @@ export const Controls: React.FC= () => {
                             }
                             onChange={(data) => setFilter(
                                 'category',
-                                data?.value === ALL 
+                                data?.value === ALL
                                     ? null
                                     : data?.name || null
                             )}
