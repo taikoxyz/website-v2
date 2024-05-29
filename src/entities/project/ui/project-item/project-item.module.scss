@@ -33,7 +33,11 @@
     background: #5D636F;
 
     &Testnet {
-        background: $kColorPink;
+        background: #5D636F; // Grey background for Testnet
+    }
+
+    &Mainnet {
+        background: $kColorPink; // Pink background for Mainnet
     }
 }
 
