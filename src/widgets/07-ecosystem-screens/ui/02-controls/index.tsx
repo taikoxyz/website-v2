@@ -48,11 +48,6 @@ export const Controls: React.FC= () => {
         }
     }, [isTyping, value]);
 
-    // Set the default filter to 'Mainnet' on the initial render
-    useEffect(() => {
-        setFilter('type', 'Mainnet');
-    }, []);
-
     const renderCategories = useMemo(() => {
         return [{ name: "All Categories", value: ALL }].concat(categories
             .filter((item) => (item.projects?.count || 0) > 0)
