@@ -13,29 +13,30 @@ interface Props {
 }
 
 export const ProjectItem: React.FC<Props> = ({
-    url,
-    categories,
-    iconSrc,
-    text,
-    type,
-    title,
-}) => {
+                                                 url,
+                                                 categories,
+                                                 iconSrc,
+                                                 text,
+                                                 type,
+                                                 title,
+                                             }) => {
     return (
-        <a 
-            href={url} 
+        <a
+            href={url}
             className={css.project}
             target="_blank"
         >
             <div className={css.head}>
-                <img 
-                    className={css.icon} 
-                    src={iconSrc} 
-                    alt="" 
+                <img
+                    className={css.icon}
+                    src={iconSrc}
+                    alt=""
                 />
 
                 <p className={clsx(
                     css.label,
-                    type === 'Testnet' && css.labelTestnet
+                    type === 'Testnet' && css.labelTestnet,
+                    type === 'Mainnet' && css.labelMainnet
                 )}>
                     <span>{type}</span>
                 </p>
@@ -52,7 +53,7 @@ export const ProjectItem: React.FC<Props> = ({
             {categories.length > 0 && (
                 <ul className={css.categories}>
                     {categories.map((category) => (
-                        <li 
+                        <li
                             className={css.categories_item}
                             key={category.id}
                         >

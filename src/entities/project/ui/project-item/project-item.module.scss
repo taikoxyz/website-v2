@@ -32,11 +32,11 @@
     color: #FFF;
     background: #5D636F;
 
-    &Testnet {
+    &.labelTestnet {
         background: #5D636F; // Grey background for Testnet
     }
 
-    &Mainnet {
+    &.labelMainnet {
         background: $kColorPink; // Pink background for Mainnet
     }
 }
