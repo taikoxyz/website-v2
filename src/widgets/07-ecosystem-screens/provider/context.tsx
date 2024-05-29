@@ -9,7 +9,7 @@ export interface IEcosystemFilters {
 export interface IEcosystemContext {
     filters: IEcosystemFilters;
     setFilter: <T extends keyof IEcosystemFilters>(
-        key: T, 
+        key: T,
         value: IEcosystemFilters[T]
     ) => void;
 }
@@ -35,16 +35,16 @@ export const EcosystemFilters: React.FC<Props> = ({ children }) => {
     const [state, setState] = useState<IEcosystemFilters>({
         search: '',
         category: null,
-        type: null
+        type: 'Mainnet' // Set the initial type to 'Mainnet'
     });
 
     const setFilter = <T extends keyof IEcosystemFilters>(
-        key: T, 
+        key: T,
         value: IEcosystemFilters[T]
     ) => {
         setState({  ...state, [key]: value });
     }
-    
+
     return (
         <EcosystemContext.Provider value={{ filters: state, setFilter }}>
             {children}
