@@ -30,10 +30,10 @@
 
     font: 700 14px/1 $kFontPublicSans;
     color: #FFF;
-    background: #5D636F;
+    background: $kColorPink;
 
     &Testnet {
-        background: $kColorPink;
+        background: #5D636F;
     }
 }
 

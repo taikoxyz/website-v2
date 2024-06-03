@@ -7,25 +7,32 @@
                 { 
                     "name": "Solutions", 
                     "url": "/solutions", 
-                    "icon": "/img/icons/nav-solutions.svg",
-                    "bold": true
+                    "icon": "/img/icons/nav-solutions.svg"
                 },
                 { 
                     "name": "Bridge", 
-                    "url": "https://bridge.hekla.taiko.xyz/", 
+                    "url": "https://bridge.taiko.xyz/", 
                     "icon": "/img/icons/nav-bridge.svg" 
-                }, { 
-                    "name": "Swap", 
-                    "url": "https://swap.hekla.taiko.xyz/", 
-                    "icon": "/img/icons/nav-swap.svg" 
                 }, { 
                     "name": "Documentation", 
                     "url": "https://docs.taiko.xyz/start-here/getting-started",
                     "icon": "/img/icons/nav-docs.svg" 
                 }, { 
-                    "name": "Explorer", 
-                    "url": "https://hekla.taikoscan.network/",
+                    "name": "Explorers", 
+                    "url": "/",
                     "icon": "/img/icons/nav-explorer.svg" 
+                }, { 
+                    "name": "taikoscan.network", 
+                    "subtitle": "by Routescan",
+                    "url": "https://taikoscan.network/"
+                }, { 
+                    "name": "taikoscan.io", 
+                    "subtitle": "by Etherscan",
+                    "url": "https://taikoscan.io/"
+                }, { 
+                    "name": "taikoscan.net",
+                    "subtitle": "by Socialscan", 
+                    "url": "https://taikoscan.net/"
                 }
             ] 
         }, { 
@@ -36,6 +43,14 @@
                     "url": "/ecosystem", 
                     "icon": "/img/icons/nav-ecosystem.svg" 
                 }, { 
+                    "name": "Trailblazer", 
+                    "url": "https://trailblazers.taiko.xyz/", 
+                    "icon": "/img/icons/nav-trailblazer.svg" 
+                }, { 
+                    "name": "Snaefell NFT",
+                    "url": "https://snaefellnft.taiko.xyz/",
+                    "icon": "/img/icons/nav-trailblazer.svg"
+                }, {
                     "name": "Blog", 
                     "url": "/blog", 
                     "icon": "/img/icons/nav-blog.svg" 
