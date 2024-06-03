@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import React, { useEffect, useRef } from 'react';
-import gsap from "gsap"
+import gsap from "gsap";
 import { useAos } from 'shared/lib/hooks/use-aos';
 import { MediaQuery } from 'shared/ui/media-query';
 import { AboutScreensEnum } from 'widgets/02-about-screens/lib/types';
