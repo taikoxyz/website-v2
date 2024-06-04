@@ -51,6 +51,10 @@
                     "url": "https://snaefellnft.taiko.xyz/",
                     "icon": "/img/icons/nav-trailblazer.svg"
                 }, {
+                    "name": "Taikoons NFT",
+                    "url": "https://taikoons.taiko.xyz/",
+                    "icon": "/img/icons/nav-trailblazer.svg"
+                }, {
                     "name": "Blog", 
                     "url": "/blog", 
                     "icon": "/img/icons/nav-blog.svg" 
