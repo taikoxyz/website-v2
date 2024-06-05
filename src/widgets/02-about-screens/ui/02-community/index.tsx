@@ -19,7 +19,6 @@ export const Community: React.FC = () => {
             gsap.to(current, 2, {
                 var: 90,
                 onUpdate: function() {
-                    console.log('upd')
                     spanRef.current!.innerHTML = `${Math.ceil(current.var)}`;
                 }
             });
