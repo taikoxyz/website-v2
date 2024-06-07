@@ -2,7 +2,7 @@ export function css<T extends HTMLElement>(element: T, styles: Partial<CSSStyleD
     Object.assign(element.style, styles);
 }
 
-export const exucuteOnReadyPage = (fn: Function) => {
+export const executeOnReadyPage = (fn: Function) => {
     if (document.readyState === 'complete') fn();
     else window.addEventListener('load', () => fn());
 };
