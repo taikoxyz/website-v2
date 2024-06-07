@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import React, { useEffect, useState } from 'react';
-import { exucuteOnReadyPage } from 'shared/lib/utils/browser';
+import { executeOnReadyPage } from 'shared/lib/utils/browser';
 import { Button } from 'shared/components/@buttons/button';
 import { MediaQuery } from 'shared/ui/media-query';
 import Sprite from 'shared/ui/sprite';
@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
     const [complete, setComplete] = useState(false);
     const { t } = useTranslation('home');
 
-    useEffect(() => exucuteOnReadyPage(() => setComplete(true)), []);
+    useEffect(() => executeOnReadyPage(() => setComplete(true)), []);
 
     return (
         <section

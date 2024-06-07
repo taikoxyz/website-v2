@@ -12,13 +12,13 @@ import { blogApi } from "shared/lib/api";
 import { Menu } from "widgets/menu";
 import css from './home.module.scss';
 import { useEffect, useState } from "react";
-import { exucuteOnReadyPage } from "shared/lib/utils/browser";
+import { executeOnReadyPage } from "shared/lib/utils/browser";
 
 function Home() {
     const [complete, setComplete] = useState(false);
     const { t } = useTranslation('home');
 
-    useEffect(() => exucuteOnReadyPage(() => setComplete(true)), []);
+    useEffect(() => executeOnReadyPage(() => setComplete(true)), []);
     
     return (    
         <MainLayout 
