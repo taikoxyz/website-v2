@@ -71,6 +71,9 @@ export const Projects: React.FC = () => {
                             variant="pink-outlined"
                         />
                     )}
+                    <div className={css.disclaimer}>
+                        *Disclaimer: Be cautious when using third-party applications. Applications listed are provided for information without recommendation or endorsement. Your security and privacy are important, so research thoroughly before engaging with third-party applications. We are not responsible for any risks or losses associated with the use of any third-party offerings. Proceed at your own discretion.
+                    </div>
                 </div>
             </div>
         </section>
