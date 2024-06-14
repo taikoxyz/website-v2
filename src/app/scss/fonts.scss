@@ -1,3 +1,5 @@
+@include fontCreate($kFontClashDisplay, 500, "/fonts/ClashDisplay-Medium");
+@include fontCreate($kFontClashDisplay, 600, "/fonts/ClashDisplay-Semibold");
 @include fontCreate($kFontClashGrotesk, 500, "/fonts/ClashGrotesk-Medium");
 @include fontCreate($kFontClashGrotesk, 600, "/fonts/ClashGrotesk-Semibold");
 @include fontCreate($kFontGilroy, 500, "/fonts/Gilroy-Medium");
