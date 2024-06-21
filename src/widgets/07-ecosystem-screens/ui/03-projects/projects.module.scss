@@ -1,34 +1,38 @@
 .wrapper {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
+
 .disclaimer {
-    color:  #444A55;
+    color: #444A55;
     margin-top: 50px;
     padding: 0% 23%;
-    /* Body Default/Regular */
     font-family: "Public Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
+    background: #f9f9f9; /* Light background for better readability */
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+
     @media (max-width: 1180px) {
         padding: 0 5%;
+    }
+
+    strong {
+        font-weight: 700; /* Bold text for emphasis */
     }
 }
 
 .lastUpdate {
     margin: 28px auto 0;
-
     display: flex;
     align-items: center;
     gap: 6px;
-
     font: 500 14px/1.1 $kFontPublicSans;
     color: #444A55;
-
     background: #EFEFEF;
-
     padding: 10px;
     border-radius: 100px;
 
