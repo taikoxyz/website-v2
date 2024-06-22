@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { useDebouncedCallback } from 'use-debounce'
 import { useTranslation } from 'next-i18next';
 import { TaikoSelect } from 'shared/components/taiko-select';
-import { useInput } from 'shared/lib/hooks/use-input';
 import { Input } from 'shared/ui/input';
 import Sprite from 'shared/ui/sprite';
 import { useEcosystemFilters } from 'widgets/07-ecosystem-screens/provider';
@@ -31,9 +31,9 @@ const opt2 = [
     { name: "Privacy", value: "Privacy" },
 ]
 
-export const Controls: React.FC= () => {
+
+export const Controls: React.FC = () => {
     const { filters, setFilter } = useEcosystemFilters();
-    const { value, handleValue, isTyping } = useInput({ unblockTimeout: 500 });
     const { t } = useTranslation('ecosystem');
     const [categories, setCategories] = useState<IProjectCategory[]>([]);
 
@@ -42,11 +42,8 @@ export const Controls: React.FC= () => {
             .then((categories) => setCategories(categories.results));
     }, []);
 
-    useEffect(() => {
-        if(!isTyping) {
-            setFilter('search', value);
-        }
-    }, [isTyping, value]);
+    const onChangeSearch = useDebouncedCallback((v: string) => setFilter('search', v), 500)
+
 
     const renderCategories = useMemo(() => {
         return [{ name: "All Categories", value: ALL }].concat(categories
@@ -70,8 +67,13 @@ export const Controls: React.FC= () => {
                                 icon="magnifier"
                             />
                         }
-                        value={value}
-                        onChange={(ev) => handleValue(ev.target.value)}
+                        defaultValue={filters.search}
+                        onKeyDown={ev => {
+                            if (ev.key === 'Enter') {
+                                setFilter('search', ev.currentTarget.value)
+                            }
+                        }}
+                        onChange={(ev) => onChangeSearch(ev.currentTarget.value)}
                         placeholder={t('searchProjects')}
                     />
 
@@ -82,12 +84,14 @@ export const Controls: React.FC= () => {
                                     ? { name: filters.type, value: filters.type }
                                     : types[1] // Set 'Mainnet' as the default selected option
                             }
-                            onChange={(data) => setFilter(
-                                'type',
-                                data?.value === ALL
-                                    ? null
-                                    : data?.name || null
-                            )}
+                            onChange={(data) =>
+                                setFilter(
+                                    'type',
+                                    data?.value === ALL
+                                        ? null
+                                        : data?.name || null
+                                )
+                            }
                             options={types}
                             variant="select"
                         />

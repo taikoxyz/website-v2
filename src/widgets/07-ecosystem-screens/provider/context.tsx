@@ -1,4 +1,6 @@
-import { createContext, useContext, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import useSearchParamsSetter from "shared/lib/hooks/use-search-params-setter";
 
 export interface IEcosystemFilters {
     search: string;
@@ -24,7 +26,7 @@ export const EcosystemContext = createContext<IEcosystemContext>({
         type: null,
         category: null
     },
-    setFilter: () => {}
+    setFilter: () => { }
 });
 
 export const useEcosystemFilters = () => {
@@ -32,17 +34,29 @@ export const useEcosystemFilters = () => {
 }
 
 export const EcosystemFilters: React.FC<Props> = ({ children }) => {
+    const { searchParams, pushSearchParamsKeyValue } = useSearchParamsSetter()
     const [state, setState] = useState<IEcosystemFilters>({
-        search: '',
-        category: null,
-        type: 'Mainnet' // Set the initial type to 'Mainnet'
+        search: searchParams?.get('search') || '',
+        category: searchParams?.get('tags') || null,
+        type: searchParams?.get('type') || 'Mainnet' // Set the initial type to 'Mainnet'
     });
 
     const setFilter = <T extends keyof IEcosystemFilters>(
         key: T,
         value: IEcosystemFilters[T]
     ) => {
-        setState({  ...state, [key]: value });
+        switch (key) {
+            case 'category':
+                pushSearchParamsKeyValue('tags', value)
+                break
+            case 'type':
+                pushSearchParamsKeyValue('type', value)
+                break
+            case 'search':
+                pushSearchParamsKeyValue('search', value)
+                break
+        }
+        setState({ ...state, [key]: value });
     }
 
     return (
