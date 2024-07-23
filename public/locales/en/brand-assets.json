@@ -1,103 +1,111 @@
 {
-    "hero": {
-        "title": "Our <span>brand</span> assets",
-        "text": "Learn how to use all the foundational elements of our brand, from colour to tone of voice, across product and marketing"
-    },
-    "logo": {
-        "suptitle": "Taiko Logo",
-        "button": "Download logo",
-        "logos": [
-            {
-                "id": 1,
-                "img": "/img/brand/taiko.zip",
-                "background": "#F3F3F3"
-            }, {
-                "id": 2,
-                "img": "/img/brand/logo-pw.svg",
-                "background": "#10151B"
-            }, {
-                "id": 3,
-                "img": "/img/brand/logo-ww.svg",
-                "background": "#E81899"
-            }, {
-                "id": 4,
-                "img": "/img/brand/logo-pw.svg",
-                "background": "url(/img/brand/logo-background-1.jpg)",
-                "backgroundImage": "url(/img/brand/background.jpg)"
-            }
+  "hero": {
+    "title": "Our <span>brand</span> assets",
+    "text": "Learn how to use all the foundational elements of our brand, from colour to tone of voice, across product and marketing"
+  },
+  "logo": {
+    "suptitle": "Taiko Logo",
+    "button": "Download logo",
+    "logos": [
+      {
+        "id": 1,
+        "img": "/img/brand/taiko.zip",
+        "background": "#F3F3F3"
+      },
+      {
+        "id": 2,
+        "img": "/img/brand/logo-pw.svg",
+        "background": "#10151B"
+      },
+      {
+        "id": 3,
+        "img": "/img/brand/logo-ww.svg",
+        "background": "#E81899"
+      },
+      {
+        "id": 4,
+        "img": "/img/brand/logo-pw.svg",
+        "background": "url(/img/brand/logo-background-1.jpg)",
+        "backgroundImage": "url(/img/brand/background.jpg)"
+      }
+    ]
+  },
+  "colorPalette": {
+    "suptitle": "Color palette",
+    "colors": [
+      {
+        "title": "Primary",
+        "items": [
+          { "name": "Taiko Pink", "color": "#E81899" },
+          { "name": "Deep Gray", "color": "#0C101B" }
         ]
-    },
-    "colorPalette": {
-        "suptitle": "Color palette",
-        "colors": [
-            {
-                "title": "Primary",
-                "items": [
-                    { "name": "Taiko Pink", "color": "#E91898" },
-                    { "name": "Deep Gray", "color": "#0C101B" }
-                ]
-            }, {
-                "title": "Secondary",
-                "items": [
-                    { "name": "", "color": "#5D07C8" },
-                    { "name": "", "color": "#6ECFB0" },
-                    { "name": "", "color": "#FC6264" },
-                    { "name": "", "color": "#FFE2A0" }
-                ]
-            }
+      },
+      {
+        "title": "Secondary",
+        "items": [
+          { "name": "", "color": "#5D07C8" },
+          { "name": "", "color": "#6ECFB0" },
+          { "name": "", "color": "#FC6264" },
+          { "name": "", "color": "#FFE2A0" }
         ]
-    },
-    "topography": {
-        "suptitle": "Typography",
-        "title": "We use the following typefaces to communicate as a brand",
-        "downloadFont": "Download font",
-        "list": [
-            {
-                "title": "Clash Grotesk",
-                "text": "Our display font is clear and bold. Use it for short and sweet headlines.<br/><br/>The typeface can be a loud and proud hero or a humble supporting actor for all sorts of designs"
-            }, {
-                "title": "Public Sans",
-                "text": "We use Public Sans on most occasions. It’s clean and legible as headings and body copy."
-            }
+      }
+    ]
+  },
+  "topography": {
+    "suptitle": "Typography",
+    "title": "We use the following typefaces to communicate as a brand",
+    "downloadFont": "Download font",
+    "list": [
+      {
+        "title": "Clash Grotesk",
+        "text": "Our display font is clear and bold. Use it for short and sweet headlines.<br/><br/>The typeface can be a loud and proud hero or a humble supporting actor for all sorts of designs"
+      },
+      {
+        "title": "Public Sans",
+        "text": "We use Public Sans on most occasions. It’s clean and legible as headings and body copy."
+      }
+    ],
+    "fonts": [
+      {
+        "title": "Primary",
+        "fontFamily": "Clash Grotesk",
+        "font": "/img/brand/fonts-grotesk.svg",
+        "variants": [
+          {
+            "name": "Clash Grotesk Semibold",
+            "weight": 600
+          },
+          {
+            "name": "Clash Grotesk Medium",
+            "weight": 500
+          }
         ],
-        "fonts": [
-            {
-                "title": "Primary",
-                "fontFamily": "Clash Grotesk",
-                "font": "/img/brand/fonts-grotesk.svg",
-                "variants": [
-                    {
-                        "name": "Clash Grotesk Semibold",
-                        "weight": 600
-                    }, {
-                        "name": "Clash Grotesk Medium",
-                        "weight": 500
-                    }
-                ],
-                "url": "/files/ClashGrotesk.zip"
-            },
-            {
-                "title": "Secondary",
-                "fontFamily": "Public Sans",
-                "font": "/img/brand/fonts-sans.svg",
-                "variants": [
-                    {
-                        "name": "Public Sans Bold",
-                        "weight": 700
-                    }, {
-                        "name": "Public Sans Medium",
-                        "weight": 500
-                    }, {
-                        "name": "Public Sans Regular",
-                        "weight": 400
-                    }
-                ],
-                "url": "/files/PublicSans.zip"
-            }
-        ]
-    },
-    "brandBook": {
-        "title": "Our brand book",
-        "button": "Download brand book"
-    }
+        "url": "/files/ClashGrotesk.zip"
+      },
+      {
+        "title": "Secondary",
+        "fontFamily": "Public Sans",
+        "font": "/img/brand/fonts-sans.svg",
+        "variants": [
+          {
+            "name": "Public Sans Bold",
+            "weight": 700
+          },
+          {
+            "name": "Public Sans Medium",
+            "weight": 500
+          },
+          {
+            "name": "Public Sans Regular",
+            "weight": 400
+          }
+        ],
+        "url": "/files/PublicSans.zip"
+      }
+    ]
+  },
+  "brandBook": {
+    "title": "Our brand book",
+    "button": "Download brand book"
+  }
 }
