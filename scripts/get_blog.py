@@ -84,208 +84,27 @@ payload = {
     "operationName": "ProjectPage",
     "variables": {
         "projectAddress": "taiko.mirror.xyz",
-        "limit": 100
+        "limit": 10
     },
     "query": """
         query ProjectPage($projectAddress: String!, $limit: Int, $cursor: Int) {
-          projectFeed(projectAddress: $projectAddress, limit: $limit, cursor: $cursor) {
-            _id
-            domain
-            ens
-            theme {
-              accent
-              colorMode
-              __typename
+            projectFeed(projectAddress: $projectAddress, limit: $limit, cursor: $cursor) {
+                ...projectPage
             }
-            displayName
-            ens
-            address
-            ...projectPage
-            ...publicationLayoutProject
-            __typename
-          }
         }
-
         fragment projectPage on ProjectType {
-          _id
-          address
-          avatarURL
-          description
-          displayName
-          domain
-          ens
-          twitterUsername
-          externalUrl
-          theme {
-            accent
-            colorMode
-            __typename
-          }
-          headerImage {
-            id
-            url
-            __typename
-          }
-          posts {
-            ... on crowdfund {
-              _id
-              id
-              __typename
-            }
-            ... on entry {
-              _id
-              id
-              body
-              digest
-              title
-              publishedAtTimestamp
-              writingNFT {
-                _id
-                optimisticNumSold
-                proxyAddress
-                purchases {
-                  numSold
-                  __typename
+            posts {
+                ... on entry {
+                    _id
+                    id
+                    digest
+                    title
+                    publishedAtTimestamp
+                    featuredImage {
+                        url
+                    }
                 }
-                __typename
-              }
-              collectorBubbles {
-                _id
-                address
-                project {
-                  ...projectDetails
-                  __typename
-                }
-                __typename
-              }
-              featuredImage {
-                mimetype
-                url
-                __typename
-              }
-              publisher {
-                ...publisherDetails
-                __typename
-              }
-              settings {
-                ...entrySettingsDetails
-                __typename
-              }
-              __typename
             }
-            ... on SubscriberEditionType {
-              _id
-              __typename
-            }
-            __typename
-          }
-          __typename
-        }
-
-        fragment projectDetails on ProjectType {
-          _id
-          address
-          avatarURL
-          description
-          displayName
-          domain
-          ens
-          gaTrackingID
-          ga4TrackingID
-          mailingListURL
-          twitterUsername
-          wnftChainId
-          externalUrl
-          headerImage {
-            ...mediaAsset
-            __typename
-          }
-          theme {
-            ...themeDetails
-            __typename
-          }
-          __typename
-        }
-
-        fragment mediaAsset on MediaAssetType {
-          id
-          cid
-          mimetype
-          sizes {
-            ...mediaAssetSizes
-            __typename
-          }
-          url
-          __typename
-        }
-
-        fragment mediaAssetSizes on MediaAssetSizesType {
-          og {
-            ...mediaAssetSize
-            __typename
-          }
-          lg {
-            ...mediaAssetSize
-            __typename
-          }
-          md {
-            ...mediaAssetSize
-            __typename
-          }
-          sm {
-            ...mediaAssetSize
-            __typename
-          }
-          __typename
-        }
-
-        fragment mediaAssetSize on MediaAssetSizeType {
-          src
-          height
-          width
-          __typename
-        }
-
-        fragment themeDetails on UserProfileThemeType {
-          accent
-          colorMode
-          __typename
-        }
-
-        fragment publisherDetails on PublisherType {
-          project {
-            ...projectDetails
-            __typename
-          }
-          member {
-            ...projectDetails
-            __typename
-          }
-          __typename
-        }
-
-        fragment entrySettingsDetails on EntrySettingsType {
-          description
-          metaImage {
-            ...mediaAsset
-            __typename
-          }
-          title
-          __typename
-        }
-
-        fragment publicationLayoutProject on ProjectType {
-          _id
-          avatarURL
-          displayName
-          domain
-          address
-          ens
-          gaTrackingID
-          ga4TrackingID
-          mailingListURL
-          description
-          __typename
         }
     """
 }
