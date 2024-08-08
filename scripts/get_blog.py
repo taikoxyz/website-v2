@@ -304,7 +304,6 @@ for post in data['data']['projectFeed']['posts']:
     featured_image_url = post.get('featuredImage', {}).get('url', 'N/A')
     formatted_date = datetime.fromtimestamp(published_at).strftime('%Y-%m-%d') if published_at != 'N/A' else 'N/A'
     slug = create_slug(title)
-    print(link)
     if link not in strapi_link:
         print("Unpublished blog: "+ title)
         # Download featured image
