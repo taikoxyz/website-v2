@@ -3,11 +3,16 @@ import json
 from datetime import datetime
 import os
 import re
+import uuid
 
 
 strapi_blog_url = ""
 strapi_upload_url = ""
 API_KEY = ""
+
+def generate_code():
+    new_code = str(uuid.uuid4())
+    return new_code
 
 def fetch_strapi_blogs():
     response = requests.get(f"{strapi_blog_url}?_limit=100", headers={"Authorization": f"Bearer {API_KEY}"})
@@ -56,14 +61,23 @@ def upload_image_to_strapi(image_path):
         print(f"Failed to upload image to Strapi: {response.content}")
         return None
 
+code = generate_code()
 url = "https://taiko.mirror.xyz/api/graphql"
 headers = {
     'accept': '*/*',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     'content-type': 'application/json',
-    'cookie': '',
+    'cookie': f'anonymousUserId={code};',
     'origin': 'https://taiko.mirror.xyz',
     'priority': 'u=1, i',
     'referer': 'https://taiko.mirror.xyz/',
+    'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"macOS"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 }
 
 payload = {
@@ -290,6 +304,7 @@ for post in data['data']['projectFeed']['posts']:
     featured_image_url = post.get('featuredImage', {}).get('url', 'N/A')
     formatted_date = datetime.fromtimestamp(published_at).strftime('%Y-%m-%d') if published_at != 'N/A' else 'N/A'
     slug = create_slug(title)
+    print(link)
     if link not in strapi_link:
         print("Unpublished blog: "+ title)
         # Download featured image
