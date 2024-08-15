@@ -52,7 +52,7 @@ const Solutions: React.FC = () => {
             }
           />
 
-          <ul className={css.text}>
+          <ul className={css.list}>
             {solutions.map((solution, id) => (
               <li
                 className={clsx(
