@@ -13,6 +13,7 @@ const Trailblazer: React.FC = () => {
       <div className="container">
         <TrailblazerBanner
           icon="/img/trailblazer/icon.svg"
+          logo="/img/trailblazer/trailblazer.svg"
           text={t("trailblazerBanner.text")}
           button={
             <Button
