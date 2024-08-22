@@ -28,6 +28,19 @@ const Ecosystem: NextPage = () => {
                 <EcosystemFilters>
                     <EcosystemScreens.Hero />
                     <EcosystemScreens.Controls />
+                    <div style={{ margin: '20px 0', padding: '15px', backgroundColor: '#f9f9f9', borderLeft: '5px solid #f44336' }}>
+                        <p style={{ margin: 0, fontSize: '14px', color: '#333' }}>
+                            The following applications all allege they are building atop the Taiko ecosystem. 
+                            Please note that no guarantee is made as to the authenticity, veracity, or safety of 
+                            any of these protocols. You assume all risks for using any links, so please conduct your 
+                            own research and exercise caution. If you observe any issues with any link or would like 
+                            to add to this list, please create a PR in the following Github repository: 
+                            <a href="https://github.com/taikoxyz/website-v2" target="_blank" rel="noopener noreferrer" 
+                               style={{ color: '#0073e6', textDecoration: 'underline' }}>
+                                https://github.com/taikoxyz/website-v2
+                            </a>.
+                        </p>
+                    </div>
                     <EcosystemScreens.Projects />
                     <EcosystemScreens.Grant />
                 </EcosystemFilters>
