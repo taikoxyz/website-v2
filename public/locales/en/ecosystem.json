@@ -14,5 +14,8 @@
         "text": "Building on Taiko and need financial or other support? <br></br> <span>Apply for a grant!</span>",
         "applyText": "Apply to our grants program",
         "contactUs": "Learn more"
+    },
+    "disclaimer": {
+        "subtitle": "The following applications all allege they are building atop the Taiko ecosystem. Please note that no guarantee is made as to the authenticity, veracity, or safety of any of these protocols. You assume all risks for using any links, so please conduct your own research and exercise caution. If you observe any issues with any link or would like to add to this list, please create a PR in the following Github repository: "
     }
 }
