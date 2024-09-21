@@ -1,0 +1,222 @@
+.wrapper {
+  padding: 33px 10px;
+  border-radius: 32px;
+  border-width: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 35px;
+  background-image: url("/img/trailblazer/banner-sm.png");
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+
+  .group {
+    justify-self: center;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    align-self: flex-end;
+
+    // margin-top: auto; // This will push the group to the bottom
+  }
+
+  .text {
+    max-width: 350px;
+    font: 500 16px/24px $kFontPublicSans;
+    letter-spacing: -0.01em;
+    color: #f3f3f3;
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  // Small screens
+  @media screen and (min-width: 350px) {
+    padding: 10px;
+    padding-bottom: 15px;
+    background-image: url("/img/trailblazer/banner-sm.png");
+    height: 650px;
+    background-position: center;
+    width: 100%;
+
+    .group {
+      justify-self: center;
+      width: 100%;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      height: fit-content;
+      text-align: center;
+      align-items: center;
+      // margin-top: auto; // This will push the group to the bottom
+    }
+
+    .group2 {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      height: fit-content;
+      text-align: center;
+      align-items: center;
+      // align-self: flex-end;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+
+  // Medium screens
+  @media screen and (min-width: 580px) {
+    padding: 15px;
+
+    background-image: url("/img/trailblazer/banner-md.png");
+    height: 427px;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+
+    .group {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      height: fit-content;
+      text-align: center;
+      // align-self: flex-end;
+      justify-self: flex-end;
+      align-self: center;
+      justify-content: center;
+      justify-items: center;
+      width: 100%;
+    }
+
+    .group2 {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      height: fit-content;
+      text-align: center;
+      align-items: center;
+      // align-self: flex-end;
+      justify-self: flex-end;
+      align-self: center;
+    }
+  }
+
+  // Large screens
+  @media screen and (min-width: 874px) {
+    padding: 25px;
+    padding-left: 89px;
+    padding-right: 89px;
+    background-image: url("/img/trailblazer/banner-lg.png");
+    height: 296px;
+
+    width: 100%;
+
+    .group {
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: normal;
+      justify-content: space-between;
+      gap: 15px;
+      width: 176px;
+      align-self: center;
+      width: 100%;
+    }
+
+    .group2 {
+      margin-right: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+      width: 247px;
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+  }
+
+  // Extra large screens
+  @media screen and (min-width: 1472px) {
+    padding: 25px;
+    padding-left: 89px;
+    padding-right: 89px;
+    background-image: url("/img/trailblazer/banner-xl.png");
+    height: 250px;
+
+    width: 100%;
+    .group {
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: normal;
+      justify-content: space-between;
+      gap: 15px;
+      width: 176px;
+      align-self: center;
+      width: 100%;
+    }
+
+    .group2 {
+      margin-right: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+      width: 247px;
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+  }
+
+  // Extra large screens
+  @media screen and (min-width: $kLaptopM) {
+    padding: 25px;
+    padding-left: 89px;
+    padding-right: 89px;
+    background-image: url("/img/trailblazer/banner-xl.png");
+    height: 250px;
+
+    width: 100%;
+
+    .group {
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: normal;
+      justify-content: space-between;
+      gap: 15px;
+      width: 176px;
+      align-self: center;
+      width: 100%;
+    }
+
+    .group2 {
+      margin-right: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+      width: 247px;
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+  }
+}

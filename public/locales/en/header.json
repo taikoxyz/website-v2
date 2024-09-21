@@ -33,6 +33,10 @@
                     "name": "taikoscan.net",
                     "subtitle": "by Socialscan", 
                     "url": "https://taikoscan.net/"
+                }, {
+                    "name": "taikonow.xyz",
+                    "subtitle": "by ZKPool",
+                    "url": "https://taikonow.xyz/"
                 }
             ] 
         }, { 
@@ -42,18 +46,10 @@
                     "name": "Ecosystem", 
                     "url": "/ecosystem", 
                     "icon": "/img/icons/nav-ecosystem.svg" 
-                }, { 
-                    "name": "Trailblazer", 
-                    "url": "https://trailblazers.taiko.xyz/", 
-                    "icon": "/img/icons/nav-trailblazer.svg" 
-                }, { 
-                    "name": "Snaefell NFT",
-                    "url": "https://snaefellnft.taiko.xyz/",
-                    "icon": "/img/icons/nav-trailblazer.svg"
                 }, {
-                    "name": "Taikoons NFT",
-                    "url": "https://taikoons.taiko.xyz/",
-                    "icon": "/img/icons/nav-trailblazer.svg"
+                    "name": "Status", 
+                    "url": "https://status.taiko.xyz/", 
+                    "icon": "/img/icons/nav-status.svg" 
                 }, {
                     "name": "Blog", 
                     "url": "/blog", 
@@ -81,6 +77,23 @@
                     "name": "Careers", 
                     "url": "/careers", 
                     "icon": "/img/icons/nav-careers.svg" 
+                }
+            ] 
+        }, { 
+            "name": "Engage",
+            "links": [
+                { 
+                    "name": "Trailblazer", 
+                    "url": "https://trailblazers.taiko.xyz/", 
+                    "icon": "/img/icons/nav-trailblazer.svg" 
+                }, { 
+                    "name": "Snaefell NFT",
+                    "url": "https://snaefellnft.taiko.xyz/",
+                    "icon": "/img/icons/nav-snaefell.svg"
+                }, {
+                    "name": "Taikoons NFT",
+                    "url": "https://taikoons.taiko.xyz/",
+                    "icon": "/img/icons/nav-taikoons.svg"
                 }
             ] 
         }

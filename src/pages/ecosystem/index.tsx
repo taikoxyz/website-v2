@@ -28,6 +28,7 @@ const Ecosystem: NextPage = () => {
                 <EcosystemFilters>
                     <EcosystemScreens.Hero />
                     <EcosystemScreens.Controls />
+                    <EcosystemScreens.Disclaimer />
                     <EcosystemScreens.Projects />
                     <EcosystemScreens.Grant />
                 </EcosystemFilters>

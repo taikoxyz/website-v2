@@ -1,0 +1,40 @@
+.disclaimer {
+    font: 600 14px/1.8 $kFontPublicSans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 15px auto;
+    padding: 20px 35px;
+    background-color: #ffffff;
+    border-left: 8px solid #f44336;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.content {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.link {
+    color: #0073e6;
+    text-decoration: underline;
+    font-weight: 700;
+}
