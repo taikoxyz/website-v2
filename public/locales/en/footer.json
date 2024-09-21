@@ -69,10 +69,6 @@
             "icon": "gsocial:taiko",
             "name": "forum",
             "url": "https://community.taiko.xyz/"
-        }, {
-            "icon": "gsocial:youtube",
-            "name": "youtube",
-            "url": "https://www.youtube.com/@taikoxyz"
         }
     ]
 }
