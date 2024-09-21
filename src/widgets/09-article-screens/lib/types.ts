@@ -1,6 +1,6 @@
 export enum ArticleApiEnum {
     ARTICLE = "article-slug",
-    LATEST_ARTICLES = "latest-aricles"
+    LATEST_ARTICLES = "latest-articles"
 }
 
 export enum ArticleScreensEnum {
