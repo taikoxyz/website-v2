@@ -6,46 +6,120 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to add your project. You can see existing examples on Taiko's ecosystem page [here](https://taiko.xyz/ecosystem)! NOTE: We can only accept ecosystem projects that have integrated with Taiko or have clear plans to do so in the future.
+        This is an application to submit your project to be shown on the [Taiko ecosystem page](https://taiko.xyz/ecosystem).
+        Please only submit a project if you are part of the team. DO NOT submit an application on behalf of a project if you don't work with them.
+        If your project is already on the portal and you would like to update its information, please reach out to the team.
+        **Please keep in mind: A submission doesn't guarantee a listing on the page.**
+
   - type: input
-    id: title
+    id: project_name
     attributes:
-      label: Title of your project
+      label: What is the name of your project?
     validations:
       required: true
+
   - type: input
-    id: description
+    id: your_name
     attributes:
-      label: Short (1-2 sentence) description of your project
+      label: What's your name?
     validations:
       required: true
+
   - type: input
-    id: link
+    id: email
     attributes:
-      label: Link to your project
+      label: Email
     validations:
       required: true
+
+  - type: input
+    id: telegram
+    attributes:
+      label: Telegram
+    validations:
+      required: true
+
+  - type: input
+    id: project_link
+    attributes:
+      label: Please provide a link to your website, documentation, or project overview
+    validations:
+      required: true
+
+  - type: input
+    id: x_handle
+    attributes:
+      label: What is your project's X handle?
+    validations:
+      required: true
+
   - type: dropdown
-    id: isLive
+    id: project_category
     attributes:
-      label: Live on Testnet
-      description: Is your project deployed on one of Taiko's testnets?
-      multiple: false
+      label: Project Category
       options:
-        - "Yes (default)"
+        - "Community"
+        - "DeFi"
+        - "Explorers"
+        - "Gaming"
+        - "Infrastructure"
+        - "NFT"
+        - "Privacy"
+        - "Tooling"
+        - "Wallet"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: is_live
+    attributes:
+      label: Is your project currently live on Taiko mainnet?
+      options:
+        - "Yes"
         - "No"
     validations:
       required: true
+
   - type: input
-    id: evidence
+    id: github_link
     attributes:
-      label: If your project is live on one of Taiko's testnets, please provide evidence of that here (eg. links, screenshots). If your project is NOT live, please provide your plan for integration here.
+      label: Github Link of your project
     validations:
       required: true
+
+  - type: textarea
+    id: project_description
+    attributes:
+      label: Please provide a clear and comprehensive description of your project and what value it will bring to Taiko's ecosystem
+    validations:
+      required: true
+
+  - type: input
+    id: other_networks
+    attributes:
+      label: List of other networks you are deployed on
+    validations:
+      required: true
+
+  - type: input
+    id: verified_contract
+    attributes:
+      label: Link to verified contract on Taikoscan
+      description: "For DeFi projects, this is a must question."
+    validations:
+      required: false
+
   - type: textarea
     id: logo
     attributes:
-      label: Upload a quality logo to your project
+      label: Please share your logo
       description: 512x512 or 1:1 ratio is preferred. If no image is provided we will use a placeholder image.
+    validations:
+      required: false
+
+  - type: input
+    id: team_twitter_handle
+    attributes:
+      label: Please share the twitter handle of your team member who will be participating in our twitter activities.
     validations:
       required: false
