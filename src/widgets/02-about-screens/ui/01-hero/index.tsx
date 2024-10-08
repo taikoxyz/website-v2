@@ -15,7 +15,9 @@ export const Hero: React.FC = () => {
                 <h1 
                     className={css.title} 
                     dangerouslySetInnerHTML={{
-                        __html: t('hero.title') 
+                        __html: t('hero.title')
+                        __html: t('hero.title')
+                        __html: t('hero.title')
                     }}
                 />
             </div>
