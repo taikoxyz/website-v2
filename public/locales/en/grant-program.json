@@ -4,19 +4,13 @@
         "text": "Taiko Grants is a milestone-based grants program designed to discover and support innovative projects and community members that advance the Taiko ecosystem. This program provides financial incentives and developer resources to bring builders’ visions to life."
     },
     "keyDates": {
-        "title": "Key Dates for Cycle 2",
+        "title": "Key Dates",
         "dateTitle": "date",
         "descriptionTitle": "description",
         "items": [
             {
-                "date": "Dec 4th, 2023",
-                "description": "Cycle 2 Community Track applications open"
-            }, {
-                "date": "Jan 15th, 2024",
-                "description": "Deadline for Cycle 2 Community Track applications"
-            }, {
-                "date": "Feb 15th, 2024",
-                "description": "Review period concludes; grant winners are selected and can kickstart their missions!"
+                "date": "Sep 25th, 2024",
+                "description": "Welcome to The Grant Factory, where innovation meets opportunity in the Taiko Ecosystem. Find out more here: https://dorahacks.io/hackathon/grant-factory/detail"
             }
         ]
     },
