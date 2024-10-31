@@ -1,0 +1,168 @@
+.wrapper {
+  padding: 33px 10px;
+  border-radius: 32px;
+  border-width: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+  position: relative;
+  background-color: #1f1d2f;
+
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+
+    .content {
+      width: 90%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+
+      .leftgroup {
+        p {
+          color: white;
+          font-size: 75px;
+          font-weight: 500;
+          line-height: 58px;
+          font-family: $kFontClashGrotesk;
+        }
+      }
+
+      .rightgroup {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+
+        .rightSubgroup {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .text {
+            max-width: 350px;
+            font: 500 16px/24px $kFontClashGrotesk;
+            letter-spacing: -0.01em;
+            color: #ff6fc8;
+          }
+
+          .icon {
+            width: 148.56px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  // Small screens
+  @media screen and (max-width: 579px) {
+    padding: 10px 10px 15px;
+    background-image: url("/img/grants-banner/grants-sm.png");
+    height: 650px;
+
+    .cover {
+      background: linear-gradient(
+                      190.87deg,
+                      rgba(31, 29, 47, 0) 27.28%,
+                      #1f1d2f 47.61%
+      );
+
+      .content {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
+
+        .leftgroup p {
+          font-size: 65px;
+        }
+      }
+    }
+  }
+
+  // Medium screens
+  @media screen and (min-width: 580px) and (max-width: 873px) {
+    padding: 15px;
+    background-image: url("/img/grants-banner/grants-md.png");
+    height: 427px;
+
+    .cover {
+      background: linear-gradient(
+                      278.04deg,
+                      rgba(31, 29, 47, 0) 12.15%,
+                      rgba(31, 29, 47, 0.1) 29.94%,
+                      rgba(31, 29, 47, 0.8) 64.5%
+      );
+
+      .content {
+        flex-direction: column;
+        gap: 15px;
+
+        .rightgroup {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  // Large screens
+  @media screen and (min-width: 874px) {
+    background-image: url("/img/grants-banner/grants-lg.png");
+    height: 295px;
+
+    .cover {
+      background: linear-gradient(
+                      278.04deg,
+                      rgba(31, 29, 47, 0.7) 23.14%,
+                      rgba(31, 29, 47, 0) 41.66%,
+                      rgba(31, 29, 47, 0) 62.73%,
+                      rgba(31, 29, 47, 0.7) 78.07%
+      );
+
+      .content {
+        flex-direction: row;
+        gap: 15px;
+
+        .rightgroup {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  // Extra large screens
+  @media screen and (min-width: $kLaptopM) {
+    background-image: url("/img/grants-banner/grants-xl.png");
+    height: 250px;
+
+    .cover {
+      background: linear-gradient(
+                      278.04deg,
+                      rgba(31, 29, 47, 0.7) 23.14%,
+                      rgba(31, 29, 47, 0) 41.66%,
+                      rgba(31, 29, 47, 0) 62.73%,
+                      rgba(31, 29, 47, 0.7) 78.07%
+      );
+
+      .content {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+      }
+    }
+  }
+}

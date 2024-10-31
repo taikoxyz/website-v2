@@ -118,5 +118,9 @@
   "trailblazerBanner": {
     "button": "Start your journey",
     "text": "Embark on the Trailblazers Journey: Unleash your potential in the Taiko universe!"
+  },
+  "grantFactoryBanner": {
+    "button": "Join now",
+    "text": "Total Prize Pool"
   }
 }
